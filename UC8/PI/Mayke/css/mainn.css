@@ -1,0 +1,102 @@
+.area_logo {
+  grid-area: logo;
+  background-color: white;
+}
+
+.area_cabl {
+  grid-area: cab;
+  background-color: white;
+}
+
+.area_nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  background: #0cce7d;
+  padding-top:8px;
+  
+}
+
+a{
+  color: white;
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+.area_carrocel {
+  grid-area: carrc;
+  margin-top: 2cm;
+}
+
+.area_lat-E {
+  grid-area: lat-e;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10cm;
+}
+
+.area_lat-D {
+  grid-area: lat-d;
+  background-color: rgb(250, 250, 250);
+  margin-top: 10cm;
+}
+
+.area_rod {
+  grid-area: rod;
+  background-color: rgb(134, 67, 18);
+}
+
+.area_rod > p {
+  color: white;
+  font-size: 70%;
+}
+
+.area_contd {
+  grid-area: contd;
+}
+
+.img-logo {
+  width: 100%;
+  height: auto;
+}
+
+.img-bn {
+  width: 100%;
+  height: 100%;
+}
+
+.inpt-busca { 
+  border-radius: 15px;
+  width: 400px;
+  height: 50px;
+  border: none;
+  align-items: center;
+  margin-right: 2%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 15% 35% 30% 20%;
+  grid-template-rows: 20% 5% 10% 55% 10%;
+
+  grid-template-areas:
+    "logo cab cab cab "
+    "nav nav nav nav "
+    "lat-e carrc carrc lat-d"
+    "lat-e contd contd lat-d"
+    "rod rod rod rod";
+
+  grid-gap: 1px;
+
+  background-color: silver;
+  background-color: white;
+
+  text-align: center;
+
+  padding: 20px 0;
+
+  font-size: 30px;
+}
+

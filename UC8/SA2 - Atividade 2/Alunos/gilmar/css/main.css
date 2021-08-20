@@ -1,0 +1,38 @@
+.carrossel img {
+
+    width: 500px;
+    height: 700px;
+
+}
+
+
+p {
+
+    text-align: justify;
+    color: red;
+}
+
+th {
+
+    background-color: black;
+    text-align: center;
+    color:blanchedalmond;
+}
+
+td {
+
+    padding: 10px;
+    text-align: justify;
+}
+
+.primeira {
+
+    text-align: center;
+}
+
+img {
+
+    width: 150px;
+    height: 100px;
+
+}

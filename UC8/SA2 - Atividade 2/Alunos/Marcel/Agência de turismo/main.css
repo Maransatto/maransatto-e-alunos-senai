@@ -1,0 +1,25 @@
+.nav {
+    background-color: black;
+    border-bottom: 2px solid white;
+}
+
+h5 {
+    background-color: rgba(0, 195, 255, 0.665);
+    font-size: 16px;
+}
+
+p {
+    color: black;
+    font-size: 17px;
+}
+
+button {
+    color: white;
+    background-color: green;
+}
+
+.table {
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+}

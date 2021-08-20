@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Bender';
+    src: url('Bender Black.otf') format(otf);
+}
+
+body{
+    font-family: Bender, Arial, Helvetica, sans-serif;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+.mainhead{
+    display: flex;
+    background-color: #5A595B;
+    padding: 10px;
+}
+
+.navegacao{
+    font-family: 'Bender';
+    background-color: #4b4b4b;
+    font-size: 20px;
+}
+
+.navbar-toggler{
+    float: left;
+}
+
+.navbar-toggler-icon{
+    color: #F58634;
+}
+
+.logocelestial{
+    height: 65px;
+    width: 70px;
+    padding: 10px;
+}
+
+.botao-primary{
+    background-color: #FDCD16;
+    margin-top: 5px;
+    height: 55px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: black;
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.botao-primary:hover{
+    background-color: #F58634;
+    color: white;
+}
+
+.titulocarousel{
+    background-color: rgba(128, 128, 128, 0.658);
+    border-radius: 10px;
+}
+
+.titulonoticias{
+    padding-top: 30px;
+    font-weight: bold;
+    color: #F58634;
+}
+
+.botao-primary{
+    background-color: #FDCD16;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.botao-primary:hover{
+    background-color: #F58634;
+    color: white;
+}
+
+.card-title{
+    color: #595959;
+}
+
+h2{
+    color: #F58634;
+}
+
+.card-footer{
+    background-color: #595959;
+}
+
+.card-body{
+    background-color: rgb(168, 168, 168);
+}
+.back{
+    background-color: #5A595B;
+    margin-top: 30px;
+}
+.logo2{
+    height: 100px;
+}
+
+.btn{
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover{
+    background-color: #F58634;
+}
+
+.linkfooter{
+    list-style-type: none;
+    margin-top: 20px;
+    text-decoration: none; 
+}
+
+.linkfooter > li > a{
+    color: white;
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+}
+
+.linkfooter>li>a:hover{
+    color: #F58634;
+}
+
+.navbar-nav > .nav-item > .nav-link{
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-link{
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-nav > .nav-item > .nav-link:hover{
+    color: #F58634;
+}
+
+.nav-link:hover{
+    color: #F58634;
+}
+
+.conteudo > .container > h1{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+    color: #F58634;
+    background-color: #5A595B;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.conteudo > .container > h1{
+    padding-top: 10px;
+}
+.conteudo > .container > p{
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.conteudo > .container > h3{
+    padding-top: 10px;
+    color: #F58634;
+}
+
+.imagemprov{
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.conteudo > .container > .img-fluid{
+    padding-top: 20px;
+}
+
+.conteudo > .container > h2{
+    padding-top: 30px;
+}
+
+.imagerod1{
+    padding-left: 12px;
+}
+
+body{
+	width:100%;
+	height:100%;
+}
+
+
+.contact-section > h1{
+	text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+    color: #F58634;
+    background-color: #5A595B;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contact-section > p{
+	margin:0 0 25px;
+	font-size:18px;
+	line-height:1.6em;
+    color: black;
+}
+
+#contact{
+	color:#f4f4f4;
+	padding-bottom:80px;
+}
+
+textarea.form-control{
+    height:100px;
+}
+
+.form-group{
+    padding-top: 20px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+

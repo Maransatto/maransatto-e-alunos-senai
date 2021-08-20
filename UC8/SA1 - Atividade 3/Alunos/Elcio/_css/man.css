@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box
+}
+body{
+     margin: 0;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 16px;
+}
+
+h1{ font-size: 48px; }
+h3{font-size: 24px; }
+
+.main-head{
+    grid-area: header;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+    background-color: white !important;
+}    
+
+.main-head > img{
+   width: 77px;
+   position:static;
+   left:  50px;  
+}
+.side{
+    grid-area: sidebar;
+    font-style:inherit;
+}
+.wrapper > * {
+ background-color: #ccc;
+}
+.content{
+    background-color: tomato !important;
+    grid-area: content;
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+}
+.content h3{
+    font-style: oblique;
+}
+.content p{
+    text-align: justify;
+}
+.video-1 {
+    grid-area: first-video;
+}
+.video-2{
+    grid-area: sec-video;
+}
+.video-3{
+    grid-area: th-video;
+}
+.video-4{
+    grid-area: fourth-video;
+}
+.wrapper h3{
+    font-style: oblique;
+}
+.wrapper {
+    display: grid;
+    gap: 20px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+      "header"
+      "sidebar"
+      "content"
+      "first-video"
+      "sec-video"
+       "th-video"
+       "fourth-video";
+}
+.side > ul> li >a {
+     text-decoration: none;
+     margin: 10px 10px;
+     display: inline-block;
+     color: green
+   
+
+}
+.side >ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+ 
+.video-ytb{
+    display: flex;
+     align-items: center;
+
+}
+
+@media ( min-width:500px) {
+    .wrapper{
+        grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr;
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas:
+         "header header"
+         "sidebar sidebar"
+         "content first-video"
+         "content sec-video"
+         "content th-video"
+         "content fourth-video"
+    }
+}
+@media ( min-width:1000px) {
+    .wrapper{
+        grid-template-rows: 1fr 4fr 4fr ;   
+        grid-template-columns: 2fr 5fr 2fr 2fr;
+        grid-template-areas:
+         "header header header              header"
+         "sidebar content first-video       sec-video"
+         "sidebar content th-video          fourth-video"
+         
+       }
+
+.side > ul{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+}

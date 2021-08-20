@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/imagens/praia.jpeg');
+    background-size: cover;
+    height: 500px;
+}
+
+
+header .container{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+header nav a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+header nav a:hover{
+    color: greenyellow;
+}
+
+nav{
+    margin-left: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+header .logo{
+    color: greenyellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    padding: 0px 30px;
+}
+
+input{
+    background-color: rgba(0,0,0,.400);
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    padding-left: 5px;
+    color: white;
+    width: 200px;
+}
+
+div.entrada{
+    width: 100%;
+    color: white;
+    margin: 0px 0px 30px 30px;
+    font-size: 30px;
+}
+
+span{
+    padding-right: 5px;
+}
+
+p{
+    margin: 70px 80px;
+    font-size: 40px;
+    color: white;
+}
+
+button{
+    margin: 0px 0px 550px 550px;
+    font-size: 30px;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    background-color:greenyellow; 
+    border: none;
+}
+
+button:hover{
+    background-color: white;
+}
+
+i{
+    margin-left: 13px;
+}
+
+.box{
+    padding-top: 15px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    color: black;
+}
+
+span.carr{
+   font-size: 20px;
+}
+
+button.pacotes{
+    height: 70px;
+}
+
+button.pacotes:hover{
+    background-color: black;
+    color: white;
+}

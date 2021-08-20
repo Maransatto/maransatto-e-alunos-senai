@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+
+.wrapper > * {
+    background-color: #ccc;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.main-head {
+    grid-area: header;
+}
+.side  {
+    grid-area: sidebar;
+}
+.content {
+    grid-area: content;
+}
+.video-1 {
+    grid-area: first-video;
+}
+.video-2 {
+    grid-area: sec-video;
+}
+.video-3 {
+    grid-area: th-video;
+}
+.video-4 {
+    grid-area: fourth-video;
+}
+
+.wrapper {
+    height: 100vh;
+    /* width: 100vw; */
+    padding: 10px;
+    background-color: beige;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "header"
+        "sidebar"
+        "content"
+        "first-video"
+        "sec-video"
+        "th-video"
+        "fourth-video";
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.navigation a {
+    color: green;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.content p {
+    text-align: justify;
+    padding: 20px;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 500px) {
+   .wrapper {
+       grid-template-rows: 
+        25% 100px auto ;
+       grid-template-columns: 4fr 1fr;
+       grid-template-areas:
+            "header  header"
+            "sidebar sidebar"
+            "content first-video"
+            "content sec-video"
+            "content th-video"
+            "content fourth-video"
+   }
+
+   .navigation {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .wrapper {
+        grid-template-rows: 1fr 3fr 3fr;
+        grid-template-columns: 1fr 4fr 2fr 2fr;
+        grid-template-areas:
+            "header  header     header      header"
+            "sidebar content    first-video sec-video"
+            "sidebar content    th-video    fourth-video"
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+}

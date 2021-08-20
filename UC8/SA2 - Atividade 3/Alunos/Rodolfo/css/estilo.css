@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.mainhead{
+    grid-area: mainhead;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-color: rgb(43, 37, 37);
+    justify-content: space-around;
+    color: white;
+    height: 120px;
+}
+
+.logo{
+    position: absolute;
+    left: 0;
+    margin: 10px;
+}
+
+.navegacao{
+    grid-area: navegacao;
+    margin: 0;
+    display: flex;
+    background-color: gray;
+    height: 60px;
+    justify-content: space-between;
+}
+
+.lateral{
+    grid-area: lateral;
+    background-color: cadetblue;
+    display: flex;
+    text-align: justify;
+    align-content: center;
+    display: inline-block;
+    padding: 10px;
+}
+
+.lateral > h1{
+    text-align: center;
+}
+
+.lateral > h3{
+    text-align: center;
+}
+
+.imagem1{
+    grid-area: imagem1;
+}
+
+.imagem2{
+    grid-area: imagem2;
+}
+
+.imagem3{
+    grid-area: imagem3;
+}
+
+.imagem4{
+    grid-area: imagem4;
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: #1b1a1b;
+    height: 40px;
+    text-align: center;
+    padding-top: 3px;
+    color: white;
+}
+
+.botaopromo{
+    background-color: orange;
+    padding: 30px;
+    align-content: center;
+}
+
+.h3{
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    gap: 3px;
+    width: 100vw;
+    /* height: 100vh; */
+    grid-template-areas:
+            "mainhead"
+            "navegacao"
+            "lateral"
+            "imagem1"
+            "imagem2"
+            "imagem3"
+            "imagem4"
+            "rodape"
+}
+
+@media (min-width: 700px){
+    .grid{
+        grid-template-rows: auto 1fr;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "mainhead mainhead mainhead mainhead"
+            "navegacao navegacao navegacao navegacao"
+            "lateral lateral imagem1 imagem2"
+            "lateral lateral imagem3 imagem4"
+            "rodape rodape rodape rodape"
+    }
+}

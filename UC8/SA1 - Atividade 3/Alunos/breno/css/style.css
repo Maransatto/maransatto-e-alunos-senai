@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    background-color:white;
+    align-items: center;
+}
+
+button{
+    color:red;
+    background-color:black;
+    margin-right: 30px;
+    height: 45px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover{
+    background-color: red;
+    color: white;
+}
+
+nav{
+    margin-right: 300px;
+}
+
+div.logo{
+    margin-left: 25px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding-right: 30px;
+}
+
+div.conteudo{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/image/doacao.1.jpeg');
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    color: white;
+    font-size: 50px;
+    margin: 110px 0px 0px 200px;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    width: 700px;
+    margin: 0px 0px 0px 200px;
+}
+
+button.cont{
+    color:red;
+    background-color:black;
+    margin: 10px 0px 0px 200px;
+    height: 45px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+}
+
+button.cont:hover{
+    background-color: red;
+    color: white;
+}
+
+div.movies{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.movie1{
+    margin: 30px 30px 30px 30px;
+}
+
+div.movie2{
+    margin: 30px 30px 30px 30px;
+}

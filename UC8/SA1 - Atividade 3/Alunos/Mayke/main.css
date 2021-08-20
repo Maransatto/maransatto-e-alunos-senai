@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.main-head {
+  grid-area: header;
+  border: 1px solid silver;
+  background-color: rgb(231, 101, 78);
+  border-radius: 4px;
+  
+}
+
+.main-head h1{
+
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.side {
+  grid-area: sidebar;
+  border: 1px solid silver;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+.content {
+  grid-area: content;
+  border: 1px solid silver;
+  background-color: rgb(39, 165, 248);
+  color: white;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.video-1 {
+  grid-area: video1;
+  border: 1px solid silver;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-2 {
+  grid-area: video2;
+  border: 1px solid silver;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-3 {
+  grid-area: video3;
+  border: 1px solid silver;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-4 {
+  grid-area: video4;
+  border: 1px solid silver;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.yt {
+  display: inline-flex;
+  align-items: center;
+}
+
+.wrapper {
+  display: grid;
+  gap: 10px;
+  background-color: silver;
+  width: 100vw;
+  height: 100vw;
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "video1"
+    "video2"
+    "video3"
+    "video4";
+}
+
+.side > ul > li > a {
+  text-decoration: none; /*tira o sublinhado */
+  margin: 10px 10px;
+  display: inline-block;
+  color: red;
+}
+
+.side > ul {
+  display: flex;
+  list-style: none; /*tira o marcador */
+  justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "header header "
+      "sidebar sidebar"
+      "content video1"
+      "content video2"
+      "content video3"
+      "content video4";
+  }
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-columns: 2fr 3fr 3fr 3fr;
+    grid-template-areas:
+      "header header header header"
+      "sidebar  content video1 video2"
+      "sidebar  content video3 video4";
+  }
+
+  .side > ul {
+    display: flex;
+    list-style: none; /*tira o marcador */
+    flex-direction: column;
+  }
+}

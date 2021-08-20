@@ -1,0 +1,25 @@
+body {
+  margin: 0%;
+  background: #0cce7d;
+}
+
+h1{
+  margin: 60px;
+  color: rgb(238, 195, 22);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: rgb(134, 67, 18);
+  padding: 20px;
+  font-size: 36px;
+  margin-top: 10px;
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+

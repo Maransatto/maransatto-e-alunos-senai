@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;  
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+.main-head{    
+    grid-area:header;   
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 10 px 0 rgb(0, 0, 0,0.2);
+    background-color: white !important;
+}
+
+.main-head > img{
+    width: 160px;
+    position:absolute;
+    right: 20px;
+}
+
+
+.side{    
+    grid-area:sidebar; 
+}
+
+
+
+
+
+.content{
+    grid-area:content;    
+    text-align:center;
+    padding: 0 20px;
+    background-color: rgb(248, 150, 139)!important;
+}
+
+.content-2{
+    grid-area:content;    
+    text-align:center;
+    padding: 0 20px;
+    background-color: white!important;
+}
+
+
+
+.content p{
+    text-align: justify;
+    
+}
+
+.video1{
+    grid-area:video1;
+    
+}
+
+.video2{
+    grid-area:video2;
+}
+
+.video3{
+    grid-area:video3;    
+}
+
+.video4{
+    grid-area:video4;
+}
+
+.wrapper > *{
+    
+    background-color: #ccc  ;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px rgb(131, 163, 206);
+
+}
+
+.wrapper{
+    margin: 5px;
+    display: grid;
+    gap:10px;
+    background-color: white;
+    width: 100vw; /*996*/
+    height: 100vh; /*616*/
+    grid-template-areas:
+            "header"
+            "sidebar"
+            "content"                
+            "video1"
+            "video2"
+            "video3"
+            "video4"
+    ;
+}
+
+.side > ul > li > a {
+    text-decoration: none; 
+    margin: 10px 10px;
+    display: inline-block;
+}
+
+.side > ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between; /*da espaços entre o menu*/
+}
+
+.video-yt{
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media(min-width: 500px){
+    .wrapper{
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+        grid-template-columns: 3fr 21fr;    
+        grid-template-areas:             
+            "header  header"
+            "sidebar sidebar"
+            "content video1"    
+            "content video2"
+            "content video3"
+            "content video4"
+       ;
+    }
+}
+
+@media(min-width: 700px){
+    .wrapper{
+        grid-template-rows:1fr 4fr 4fr;
+        grid-template-columns: 2fr 3fr 3fr 3fr;    
+        grid-template-areas:             
+            "header  header  header header"
+            "sidebar content video1 video2"
+            "sidebar content video3 video4"                            
+        ;
+    }
+    .side > ul{
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+    }
+}
+
+
+/*Formatações*/
+
+a:hover{
+    background-color: rgb(148, 147, 153);
+    border-radius: 5px;
+}

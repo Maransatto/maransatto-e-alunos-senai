@@ -1,0 +1,83 @@
+.principal{
+    background-color: rgb(250, 249, 249);
+}
+
+.nav {
+    background-color: rgba(2, 26, 26, 0.562);
+    display: flex ;
+    box-sizing: content-box;
+    border-bottom: 1px solid #ccc;
+    
+}
+.nav li a{
+    color:white;
+    font-size: 20px ;
+}
+.boas_vindas {
+    color: brown;
+    text-align: center;
+}
+.table-responsive img {
+    width: 100px;
+}
+.table-responsive td {
+    font-size: 20px;
+}
+
+.fundo {
+    background-color: tomato;
+}
+
+.carousel-item H4{
+    color: brown;
+    font-style: oblique;
+    font-weight: bold;
+}
+.carousel-item p{
+    color: brown;
+    font-style: oblique;
+   font-weight: bold;
+    
+}
+.rodape{
+    font-size: 12px;
+    text-align: center;
+}
+.continente h5{
+    text-decoration: underline}
+
+/* janela modal */
+#JanelaModal{
+    
+    display: none;
+    position:fixed;
+    z-index: 1;
+    padding-top: 100px;
+    padding: 50px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+#imgModal{
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 800px;
+}
+
+#btFechar{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color:#fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0px;
+ 
+    }
+/* fim janela modal */

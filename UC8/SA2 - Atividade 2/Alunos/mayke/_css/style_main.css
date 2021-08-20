@@ -1,0 +1,37 @@
+h1 {
+  color: blue;
+}
+
+.my-img {
+  width: 286px;
+  height: 160.88px;
+}
+
+body {
+  background-color: rgb(22, 225, 240);
+}
+
+.banner {
+  border: 1px solid white;
+  background-color: white;
+  padding: 10px;
+}
+
+@media (max-width: 700px) {
+  body {
+    background-color: rgb(189, 22, 240);
+  }
+}
+
+.card-img {
+  margin-bottom: 40px;
+}
+
+.img-mini {
+  width: 90px;
+  /* height: 10%; */
+}
+
+.table-my{
+  background-color: cornsilk;
+}

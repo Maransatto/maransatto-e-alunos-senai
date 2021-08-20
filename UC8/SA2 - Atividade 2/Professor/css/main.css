@@ -1,0 +1,18 @@
+.navbar {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.table-prices img {
+    width: 150px;
+}
+
+.table-description {
+    width: 500px;
+    text-align: justify;
+}
+
+.table-price {
+    width: 90px;
+}

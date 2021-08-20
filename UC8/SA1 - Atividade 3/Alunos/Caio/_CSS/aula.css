@@ -1,0 +1,132 @@
+{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.wrapper > * {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: grid;
+}
+
+.main-head {
+    grid-area: header;
+}
+
+.side {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+.video-1 {
+    grid-area: first-video;
+}
+
+.video-2 {
+    grid-area: sec-video;
+}
+
+.video-3{
+    grid-area: th-video;
+}
+
+.video-4{
+    grid-area: fourth-video;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    background-color: white;
+    gap: 10px;
+    display: grid;
+    grid-template-areas:
+
+    "header"
+    "sidebar"
+    "content"
+    "first-video"
+    "sec-video"
+    "th-video"
+    "fourth-video"
+}
+
+.navigation{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.navigation a {
+    color: black;
+    text-decoration: none;
+}
+.main-head{
+    color: red;
+    align-items: center;
+    justify-content: center;
+}
+.navigation a:hover {
+    text-decoration: underline;
+    color: red;
+    
+}
+
+.content h1{
+    color: red;
+    padding: 10px;    
+}
+.content p {
+    text-align: justify;
+    padding: 20px;
+}
+
+@media (min-width: 500px) {
+    .wrapper{
+        grid-template-columns: 4fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "sidebar sidebar"
+        "content first-video"
+        "content sec-video"
+        "content th-video"
+        "content fourth-video"
+    }
+    .navigation{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .wrapper {
+        grid-template-rows: 2fr 3fr 3fr;
+        grid-template-columns: 1fr 4fr 2fr 2fr;
+        grid-template-areas:     
+            "header header header header"
+            "sidebar content first-video sec-video"
+            "sidebar content th-video fourth-video"
+    }
+    .navigation{
+        flex-direction: column;
+    }
+}
+

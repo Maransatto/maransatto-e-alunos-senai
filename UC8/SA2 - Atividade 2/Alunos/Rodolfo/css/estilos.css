@@ -1,0 +1,52 @@
+.barra{
+    background-color:#024873;
+    color: white;
+    padding: 3px 0px 3px 3px;
+}
+
+.nav{
+    font-size: 20px;
+    background-color: #D7D7D9;
+}
+
+.fundo{
+    background-color: tomato;
+    text-align: center;
+    font-size: 14px;
+}
+
+.fundo2{
+    background-color: #5B89A6;
+    text-align: center;
+    font-size: 14px;
+}
+
+.tituloutros{
+    text-align: center;
+    margin-top: 10px;
+    background-color: #024873;
+    color: white;
+    padding: 3px 0px 3px 3px;
+}
+
+.rodape{
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    background: #D7D7D9;
+    height: 50px;
+}
+
+.final{
+    font-size: 14px;
+}
+
+.imagem{
+    width: 100px;
+}
+
+.titulopag2{
+    background-color: #7c7c7c;
+    padding: 3px 3px 3px 3px;
+    text-align: center;
+}

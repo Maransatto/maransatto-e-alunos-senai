@@ -1,0 +1,49 @@
+h2 {
+  font-size: 1.4em;
+  text-align: center;
+  margin-top: 10px;
+ 
+  color: rgb(102, 69, 25);
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 1.8em;
+  margin-bottom: 10px;
+  text-align: center;
+ 
+  color: rgb(102, 69, 25);
+}
+
+.tabela li {
+  position: relative;
+  float: left;
+  margin: 0 50px 20px 0;
+  list-style: none;
+  background-color: white;
+  margin-left: 5%;
+}
+
+.tabela li img {
+  display: block;
+}
+
+body {
+  margin: 0%;
+  background: #0cce7d;
+}
+
+.nav {
+  
+  display: flex;
+  justify-content: center;
+  background-color: rgb(117, 82, 7);
+  margin-bottom: 5%;
+}
+
+a{
+  margin: 1cm;
+  color: white;
+  font-size: 20px;
+  text-decoration: none; /*tira o sublinhado */
+}

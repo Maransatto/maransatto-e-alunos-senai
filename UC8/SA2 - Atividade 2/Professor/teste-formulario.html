@@ -1,0 +1,78 @@
+
+            <!DOCTYPE html>
+            <html>
+                <head>
+                <meta charset="ISO-8859-1"/>	
+                <title>Validação com Jquery</title>
+            
+                <!-- JQuery e Validator -->
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>	
+                <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        $('#frmcadastro').validate({
+                            rules: {
+                                nome: {
+                                    required: true,
+                                    minlength: 5
+                                },
+                                email: {
+                                    required: true,
+                                    email: true
+                                },
+                                senha: {
+                                    required: true,
+                                    minlength: 8,
+                                    maxlength: 20
+                                },
+                                senha2: {
+                                    required: true,
+                                    equalTo: '#senha'
+                                }
+                            },
+                            messages: {
+                                nome: {
+                                    required: 'Digite campo nome.',
+                                    minlength: 'O seu nome deve ter no mínimo 5 caracteres.'
+                                },
+                                email: {
+                                    required: 'Digite campo e-mail.',
+                                    email: 'Informe um e-mail válido.'
+                                },
+                                senha: {
+                                    required: 'Digite campo senha.',
+                                    minlength: 'A senha deve ter, no mínimo, 8 caracteres.',
+                                    maxlength: 'A senha deve ter, no máximo, 20 caracteres.'
+                                },
+                                senha2: {
+                                    required: 'Digite campo confirme a sua senha.',
+                                    equalTo: 'As senhas devem ser iguais.'
+                                }
+                            }
+                        });
+                    });
+                </script>
+                </head>
+                <body>
+                    <h1>Cadastro</h1>
+                    <form id="frmcadastro" >
+                        
+                            <label>Nome:</label> 
+                            <input type="text" name="nome"> 
+                            <br><br>
+                            <label>E-mail:</label>
+                            <input type="text" name="email">
+                            <br><br>
+                            <label>Senha:</label>
+                            <input type="password" id="senha" name="senha">
+                            <br><br>
+                            <label>Confirme sua senha:</label>
+                            <input type="password" name="senha2" >
+                            <br><br>
+                            <input type="submit" value="Enviar" >
+                            <input type="reset" value="Cancelar" onclick="location. reload();">
+                        
+                    </form>
+                </body>
+            </html>
+                    

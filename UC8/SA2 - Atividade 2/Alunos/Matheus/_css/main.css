@@ -1,0 +1,22 @@
+.col-2{
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.test{
+    text-align: left;
+}
+
+.top{
+    background-color: black;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav{
+    background-color: white;
+    color: white;
+}

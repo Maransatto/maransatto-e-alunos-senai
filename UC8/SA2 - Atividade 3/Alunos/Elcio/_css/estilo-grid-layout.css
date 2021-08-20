@@ -1,0 +1,120 @@
+
+*{
+    box-sizing: border-box
+}
+
+.wrapper nav{
+    background-color: teal;
+}
+.main-head{
+    grid-area: header;
+    display:flex;
+     justify-content: space-around;
+     align-items: center;
+    /* box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2); */
+    background-color: #ccc; !important;  
+}  
+.wrapper > * {
+    background-color: #ccc;
+   }
+.content{
+    background-color: rgb(206, 206, 211) !important;
+    grid-area: content;
+    text-align: center;
+    padding: 0;
+    color: white;
+}
+.content h3{
+    font-size: 30px;
+    color: black;
+}
+.content p{
+    font-size: 20px;
+    color: black;
+}
+.botao{
+   background: rgb(136, 136, 238)  
+}
+.main-head img{
+    width: 110px;
+    position:absolute;
+    left:  10px;  
+} 
+.main-head h3{
+    font-size: 30px;
+}
+.navegacao{
+    grid-area: nav;
+}
+.image-1{
+    display: flex
+    grid-area: image1;
+}
+.image-2{
+    grid-area: image2;
+}
+.image-3{
+    grid-area: image3;
+}
+.image-4{
+    grid-area: image4;
+}.rodape{
+     text-align: center;
+     background-color: teal;
+    grid-area: rodape;
+}
+
+.imagem{
+    display: flex;
+    /* width: 100%;
+    height: 100%; */
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: unset;
+    flex-direction: column;
+     
+     }   
+.wrapper {
+    display: grid;
+    gap: 4px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+      "header"
+      "nav"
+      "content"
+      "image1"
+      "image2"
+      "image3"
+      "image4"
+      "rodape";
+}
+
+@media (min-width:500px) {
+    .wrapper{
+         grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr 1fr;
+         grid-template-columns: 3fr 1fr;
+         grid-template-areas:
+         "header  header"
+         "nav     nav"
+         "content image1"
+         "content image2"
+         "content image3"
+         "content image4"
+         "rodape  rodape" ;
+         
+    }
+}
+
+@media ( min-width:1000px) {
+    .wrapper{
+        grid-template-rows: 1fr 1fr 4fr 4fr 1fr ;   
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-areas:
+         "header    header     header"
+         "nav       nav        nav"
+         "content   image1     image2 "
+         "content   image3     image4"
+         "rodape    rodape     rodape";
+       }
+}

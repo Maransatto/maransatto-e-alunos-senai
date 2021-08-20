@@ -1,0 +1,75 @@
+body{
+    background-color: tomato;
+    margin: 0;    
+}
+
+table{
+    margin-top: 20px;
+}
+
+img{
+    width: 200px;
+}
+
+header{
+    margin:20px;       
+}
+
+.carousel-inner p{
+    text-align: start;
+}
+
+button:hover{
+    background-color: rgb(142, 110, 228)!important;
+}
+
+header, nav, main{
+    background-color: #ccc;
+    min-height: 10vh;     
+}
+
+
+nav, main{
+    min-height:40vh;
+    background-color: rgb(234, 243, 234);
+    margin: 20px;       
+}
+
+row{    
+    background-color: rgb(32, 66, 216);
+}
+
+
+.blink_me {
+    animation: blinker 0.5s linear infinite;    
+    text-align: center;
+    color: black;
+    font-size: 55px;
+  }
+
+  @keyframes blinker {
+    10% {
+      opacity: 0;
+    }
+  }
+
+
+
+
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+@media (min-width: 576px) {
+    
+}
+
+/* Dispositivos médios (tablets com 768px ou mais)*/
+@media (min-width: 768px) {
+    
+}
+/* Dispositivos large (desktops com 992px ou mais)*/
+@media (min-width: 992px) {
+    
+}
+/* Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+@media (min-width: 1200px) {
+}

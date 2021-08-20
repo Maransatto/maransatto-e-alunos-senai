@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
+}
+
+.content p {
+    text-align: justify;
+
+}
+
+.wrapper > * {
+    background-color: #ccc;
+    display: block;
+
+
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.navigation a {
+    
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.main-head {
+    grid-area: header;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+
+}
+
+
+.side {
+    grid-area: sidebar;
+
+}
+
+
+.content {
+    grid-area: content;
+
+}
+
+.video-yt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.video-1 {
+    grid-area: first-video;
+
+
+}
+
+
+.video-2 {
+    grid-area: sec-video;
+
+}
+
+.video-3 {
+    grid-area: third-video;
+
+}
+
+
+.video-4 {
+    grid-area: fourth-video;
+
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+        "header"
+        "sidebar"
+        "content"
+        "first-video"
+        "sec-video"
+        "third-video"
+        "fourth-video"
+    
+}
+
+@media (min-width: 500px) {
+    .wrapper {
+        
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "content"
+            "first-video"
+            "sec-video"
+            "third-video"
+            "fourth-video"
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+
+    }
+}
+
+@media (min-width: 1000px) {
+    .wrapper {
+        grid-template-columns: 1fr 2fr 2fr 2fr;
+        grid-template-areas:
+            "header header header header"
+            "sidebar content first-video sec-video"
+            "sidebar content third-video fourth-video"        
+    }
+
+
+    .navigation {
+        flex-direction: column;
+        text-align: left;
+    }
+}

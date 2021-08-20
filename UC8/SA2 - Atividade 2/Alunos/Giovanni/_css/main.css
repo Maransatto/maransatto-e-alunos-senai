@@ -1,0 +1,12 @@
+.nav {
+    background-color: rgb(241, 241, 241);
+    border-bottom: 1px solid #ccc;
+}
+/* .container {
+    border: 1px solid green;
+    border-radius: 5px;
+} */
+
+.table-responsive img {
+    width: 100px;
+}

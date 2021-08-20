@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 100;
+    font-family: inherit;
+    font-size: 16px;
+}
+.main-head{
+    grid-area: header;
+    border: solid 3px rgb(107, 243, 148);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 254, 255); !important
+    
+}
+
+.subtitulo{
+    text-align: center;
+}
+.main-head > img {
+    width: 140px;
+
+    left: 430px;
+}
+.side{
+    grid-area: sidebar;
+    border: solid 3px rgb(107, 243, 148);
+    background-color: seashell;
+    border-radius: 4px;
+    
+}
+    
+.foto1{
+    grid-area: first-video1;
+    border: solid 3px rgb(107, 243, 148);
+    background-color: seashell;
+    border-radius: 4px;  
+}
+
+
+.foto2{
+    grid-area: first-video2;
+    border: solid 3px rgb(107, 243, 148);
+    background-color: seashell;
+    border-radius: 4px;
+    
+}
+.foto3{
+   grid-area: first-video3;
+    border: solid 3px rgb(107, 243, 148);
+    background-color: seashell;
+    border-radius: 4px;
+    
+}
+.foto4{
+    grid-area: first-video4;
+    border: solid 3px rgb(107, 243, 148);
+    background-color: seashell;
+    border-radius: 4px;
+    
+}
+
+
+.foto1 {
+    display: flex;
+    justify-content: center;
+}
+.foto2 {
+    display: flex;
+    justify-content: center;
+}
+.foto3 {
+    display: flex;
+    justify-content: center;
+}
+.foto4 {
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+    display:grid;
+    gap: 10px;
+    background-color: rgb(223, 250, 101);
+    width: 100vw;
+    height: 150vh;
+    grid-template-areas: 
+        "header"
+        "sidebar"
+        "first-video1"
+        "first-video2"
+        "first-video3"
+        "first-video4";
+}
+
+
+
+
+    @media (min-width: 500px){
+        .wrapper{
+            grid-template-rows: 1fr 1fr 2fr 2FR 2FR 2FR;
+            grid-auto-columns: 1fr 3fr 3FR;
+            grid-template-areas: 
+                    "header header  header"
+                    "sidebar"
+                    "first-video1"
+                    "first-video2"
+                    "first-video3"
+                    "first-video4"
+        }
+    }
+
+    @media (min-width: 700px) {
+        .wrapper {
+            grid-template-rows: 1fr 3fr 3fr;
+            grid-template-columns: 1fr 2fr 2fr;
+            grid-template-areas: 
+             "header     header   header"
+             "sidebar first-video1 first-video2" 
+             "sidebar first-video3 first-video4"
+             
+            }
+        }

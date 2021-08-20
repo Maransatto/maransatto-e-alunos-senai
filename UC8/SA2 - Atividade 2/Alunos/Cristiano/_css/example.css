@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(170, 245, 239);
+}
+
+
+.container{
+    padding:2rem;
+   /* background-color:rgb(230, 195, 195);*/
+    border-radius: 20px;
+    width: 800px;    
+}
+
+
+.col{
+    /*background-color: rgb(230, 195, 195);*/
+    text-align: center;
+}
+
+.carousel-item{
+    padding:2rem; 
+    border-radius: 30px;
+}
+
+.carousel-item h5,p{
+    color:rgb(233, 227, 227);
+}
+
+img{
+    border-radius: 20px;
+}
+
+
+#menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 5em;
+    margin-top: -2.5em;
+    font-size: 30px;
+}
+
+  .blink_me {
+    animation: blinker 0.9s linear infinite;
+    color: red;
+    font-size: 35px;
+}
+  
+  .dest.blink_me {
+    animation: blinker 2s linear infinite;
+    color: black;
+    font-size: 35px;
+  }
+
+  @keyframes blinker {
+    10% {
+      opacity: 0;
+    }
+  }
+  
+
+/*
+.row > .col,
+.row > [class^=col-]{
+    padding-top: .75rem;
+    padding-bottom: .75rem;    
+    background-color:rgba(10, 160, 67, 0.15) ;
+    border: 1px solid rgba(29, 23, 20, 0.2);
+    border-radius: 2px;    
+    height: 100px;
+    
+}
+/*
+
+.row [class^=col-], .row .col{
+    background-color: #DDD;
+    border:1px solid #ccc;   
+    height: 50px;
+}
+
+.row{
+    background-color: #FF9999;
+    padding:1px;
+    height: 500px;
+}
+

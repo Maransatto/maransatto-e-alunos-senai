@@ -1,0 +1,20 @@
+.nav{
+    background-color: rgb(204, 200, 200);
+    border-bottom: 1px solid rgb(124, 122, 122);
+}
+scope{
+        background-color: black;
+    }
+.src{
+    width: 10px;
+    height: 10px;
+}
+.topo{
+    background-color: rgb(5, 0, 0);
+    text-align: center;
+    color: white;
+    
+}
+.row{
+    text-align: center;
+}

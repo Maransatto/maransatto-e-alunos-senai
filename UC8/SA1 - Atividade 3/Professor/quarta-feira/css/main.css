@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.main-head {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: white !important;
+}
+
+.main-head>img {
+    width: 47px;
+    position: absolute;
+    left: 20px;
+}
+
+.side {
+    grid-area: sidebar;
+}
+
+.content {
+    background-color: #B76262 !important;
+    grid-area: content;
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.video-1 {
+    grid-area: first-video;
+}
+
+.video-2 {
+    grid-area: sec-video;
+}
+
+.video-3 {
+    grid-area: th-video;
+}
+
+.video-4 {
+    grid-area: fourth-video;
+}
+
+.wrapper>* {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+/* Celular */
+.wrapper {
+    display: grid;
+    gap: 20px;
+    /* background-color: yellow; */
+    width: 100vw;
+    /* height: 100vh; */
+    grid-template-areas:
+        "header"
+        "sidebar"
+        "content"
+        "first-video"
+        "sec-video"
+        "th-video"
+        "fourth-video"
+}
+
+.side>ul>li>a {
+    text-decoration: none;
+    margin: 10px 10px;
+    display: inline-block;
+    color: green;
+}
+
+.side>ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.video-yt {
+    display: flex;
+    align-items: center;
+}
+
+.titulo-supimpa {
+    color: red;
+}
+
+.titulo-supimpa:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+/* Tela Média */
+@media (min-width: 500px) {
+    .wrapper {
+        grid-template-rows: 1fr 1fr auto 2fr 2fr 2fr 2fr;
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas: 
+            "header  header"
+            "sidebar sidebar"
+            "content first-video"
+            "content sec-video"
+            "content th-video"
+            "content fourth-video"
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+    
+}
+
+/* Tela Grande */
+@media (min-width: 1000px) {
+    .wrapper {
+        grid-template-rows: 1fr 4fr 4fr;
+        grid-template-columns: 2fr 5fr 2fr 2fr;
+        grid-template-areas:
+            "header  header  header         header"
+            "sidebar content first-video    sec-video"
+            "sidebar content th-video       fourth-video"
+    }
+    .side>ul {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+    }
+}
