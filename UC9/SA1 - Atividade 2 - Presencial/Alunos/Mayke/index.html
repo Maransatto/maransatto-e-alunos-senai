@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form name ="myForm" method="GET" action="" onsubmit=" return validateForm()">
+
+
+
+        Nome:
+        <input id="name" type="text" maxlength="80">
+        <br>
+        Apelido:
+        <input id="nickname" type="text" maxlength="20">
+        <br>
+        Data de nascimento:
+        <input id="day" type="text" maxlength="2">/
+        <input id="month" type="text" maxlength="2">/
+        <input id="year" type="text" maxlength="4">
+        <br>
+        CPF:
+        <input id="cpf" type="text" maxlength="14">
+        <br>
+        Time do coração:
+        <select id="team_id" maxlength="20">
+            <option id="1">Corinthians</option>
+            <option id="2">Flamengo</option>
+            <option id="3">Juventus</option>
+        </select>
+        <br>
+        Esportes de interesse:<br>
+        <input type="checkbox" name="sport" value= "Futebol" id="1">Futebol<br>
+        <input type="checkbox" name="sport" value= "Volei" id="2">Vôlei<br>
+        <input type="checkbox" name="sport" value= "Basquete" id="3">Basquete<br>
+        <input type="checkbox" name="sport" value= "Futsal" id="4">Futsal<br>
+        <input type="checkbox" name="sport" value= "Automobilismo" id="5">Automobilismo<br>
+        <input type="checkbox" name="sport" value= "Artes Marciais" id="6">Artes Marciais<br>
+        <input type="checkbox" name="sport" value= "Natação" id="7">Natação<br>
+        <br>
+        <input type="submit" value="Enviar">
+
+</body>
+</form>
+
+<script src="js/validForm.js"></script>
+</html>
