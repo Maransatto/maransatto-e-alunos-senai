@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+    background-color: rgb(53, 53, 53);
+}
+
+.container-lg {
+    color: rgb(247, 247, 247);
+}
+
+#buscas {
+    background-color: rgb(119, 21, 211);
+    color: rgb(214, 214, 214);
+    padding: 10px;
+}
+
+#headers {
+    background-color: rgb(71, 0, 138);
+    color: rgb(214, 214, 214);
+}
+
+#headers img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+
+#conteudo {
+    background-color: rgb(233, 209, 255);
+}
+
+#conteudo img {
+    padding: 20px;
+    width: 200px;
+    height: 160px;
+}
+
+.form-control {
+    width: 200px;
+}
+
+#buscas button {
+    width: 100px;
+    height: 40px;
+}
+
+#footer {
+    background-color: rgb(71, 0, 138);
+    color: rgb(214, 214, 214);
+}
+
+.table img {
+    width: 100px;
+    height: 50px;
+}
+
+.table-descripiton {
+    text-align: justify;
+}
+
+.carousel {
+    font-size: 36px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar {
+    font-size: 20px;
+    position: relative;
+}
+
+#nav-main {
+    background-color: rgb(71, 0, 138);
+    color: rgb(214, 214, 214);
+}
