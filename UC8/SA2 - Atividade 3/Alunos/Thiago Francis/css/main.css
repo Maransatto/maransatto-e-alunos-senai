@@ -1,0 +1,221 @@
+.area_0 { grid-area: logomarca; }
+
+.area_1 { grid-area: cabecalho; }
+
+.area_2 { grid-area: busca; }
+
+.area_3 { grid-area: lateral-e; }
+
+.area_4 { grid-area: conteudo-1; }
+
+.area_5 { grid-area: conteudo-2; }
+
+.area_6 { grid-area: conteudo-3; }
+
+.area_7 { grid-area: conteudo-4; }
+
+.area_8 { grid-area: rodape; 
+
+}
+
+@media (max-width: 500px){
+    .menu-celular{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    
+}
+.menu_stylle  {
+    background-color: rgb(139, 183, 224);
+
+}
+
+.grid-container {
+
+    display: grid;
+    gap: 20px;
+    height: 100vh; 
+    grid-gap: 0px;
+    padding: 5px;
+    margin: 0;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    grid-template-rows: 1fr 1fr 3fr 3fr 3fr 3fr 1fr;
+
+  grid-template-areas:
+
+    'logomarca'
+
+    'cabecalho'
+
+    'busca'
+
+    'lateral-e'
+      
+    'conteudo-1'
+     
+    'conteudo-2'
+
+    'conteudo-3'
+
+    'conteudo-4'
+     
+    'rodape'
+
+  
+
+}
+.menu_stylle  {
+    background-color: rgb(52, 119, 224);
+}
+
+@media (min-width: 500px){ 
+
+
+    .grid-container {
+        grid-template-rows: 1fr 1fr 1fr 3fr 3fr 3fr 1fr;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
+
+            'logomarca  logomarca'   
+            'cabecalho  cabecalho'
+            'busca      busca'            
+            'lateral-e  lateral-e'
+            'conteudo-1  conteudo-2'
+            'conteudo-3  conteudo-4'            
+            'rodape      rodape'
+    }
+
+}
+
+@media (min-width: 1000px){
+    
+
+    .grid-container {
+        height: 0%;
+        grid-template-rows: 2fr 1fr 3fr 3fr 1fr;
+        grid-template-columns: 2fr 2fr 3fr 3fr;
+        grid-template-areas:
+
+            'logomarca cabecalho cabecalho cabecalho'
+            'busca   busca        busca      busca'               
+            'lateral-e lateral-e conteudo-1 conteudo-2'
+            'lateral-e lateral-e conteudo-3 conteudo-4'              
+            'rodape   rodape    rodape      rodape'
+    }
+
+}    
+
+.footer {
+        background-color: rgb(52, 119, 224);
+        font-size:10px;
+        position:absolute;
+        width: 100%;
+        color: #FFFFFF;
+        
+        
+    
+    }
+
+.grid-container div {
+    text-align: center;
+    font-size: 30px; 
+}
+.conteudo{
+    background-color: rgb(221, 221, 221);
+    color: rgb(22, 51, 97);
+}
+
+.cabecalho{ 
+    background-color: rgb(221, 221, 221);
+    color: rgb(22, 51, 97);
+      
+}
+.logo{ 
+    background-color: rgb(221, 221, 221);
+    color: rgb(22, 51, 97);
+       
+}
+
+
+.area_0 img{
+    width:  150px;
+    height: 150px;
+    
+}
+
+.area_4 img{
+    width: 100%;
+    height: 100%;
+}
+
+.area_5 img{
+    width: 100%;
+    height: 100%;
+}
+
+.area_6 img{
+    width: 100%;
+    height: 100%;
+}
+
+.area_7 img{
+    width: 100%;
+    height: 100%;
+  
+}
+
+.BUTTON_OBR {
+    background: #fafafa;
+    background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -webkit-gradient(to bottom, #3D94F6, #1E62D0);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px;
+    -webkit-box-shadow: 1px 1px 20px 0 #000000;
+    -moz-box-shadow: 1px 1px 20px 0 #000000;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .BUTTON_OBR:hover {
+    border: solid #337FED 1px;
+    background: #1E62D0;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+
+ .campo_busca {
+    padding: 5px;
+    border-radius: 10px;
+    border: solid #337FED 1px;
+    font-weight: 100;
+    background: #ffffff;
+    
+    
+
+
+
+
+ }
