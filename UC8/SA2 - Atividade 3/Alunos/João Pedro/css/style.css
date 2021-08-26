@@ -1,0 +1,81 @@
+body {
+    text-align: center;
+}
+.table button {
+    font-size: 14px;
+}
+.table {
+    border-color: gray;
+    font-size: 12px;
+    font-family: Arial;
+}
+.fundo-vermelho {
+    background: red
+}
+.fundo-vermelhoclaro {
+    background: rgb(255, 223, 223);
+}
+.mt-1 {
+    padding: 3px 15px 5px;
+}
+.espaçamento-login {
+    padding: 6px 15px 0px 185px;
+}
+.my-11 {
+    margin-top: -1;
+}
+.my-1 {
+    margin-top: 1;
+}
+.radius{
+    border-radius: 15px;
+    border-color: rgb(0, 0, 0);
+}
+.btn-custom{
+    border-radius: 56px;
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+body {
+    text-align: center;
+}
+
+.container-lg {
+    color: rgb(247, 247, 247);
+}
+
+#cores {
+    background-color: rgb(238, 13, 13);
+    color: rgb(214, 214, 214);
+    padding: 10px;
+}
+
+#conteudo img {
+    padding: 20px;
+    width: 200px;
+    height: 160px;
+}
+
+.form-control {
+    width: 200px;
+}
+
+#cores button {
+    width: 100px;
+    height: 40px;
+}
+
+.table img {
+    width: 100px;
+    height: 50px;
+}
+
+.navbar {
+    font-size: 20px;
+    position: relative;
+}
+
+#nav-main {
+    background-color: rgb(71, 0, 138);
+    color: rgb(214, 214, 214);
+}
