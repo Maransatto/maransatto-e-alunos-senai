@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<title>Formulario</title>
+  </head>
+  <body>
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-body">
+                <form onsubmit="return validateForm();">
+                    <div class="form-group col-md-12">
+                        <label for="name">Nome: </label>
+                        <input type="text" class="form-control" id="name">
+                        <label for="nickname">Apelido: </label>
+                        <input type="text" class="form-control" id="nickname">
+                    </div>
+                    <div class="form-group">
+                        Informe a data do seu nascimento:
+                        <br>
+                        <label for="day">Dia</label>
+                        <input id="day" type="text" maxlength="2">/
+                        <label for="month">Mes</label>
+                        <input id="month" type="text" maxlength="2">/
+                        <label for="year">Ano</label>
+                        <input id="year" type="text" maxlength="4">
+                    </div>
+                    <div class="form-group">
+                        <label for="document">CPF: </label>
+                        <input type="text" class="form-control" id="document">
+                    </div>
+                    <div class="form-group">
+                        <label for="team_id">Time do coração: </label>
+                        <select id="team_id" class="form-control">
+                        <option selected>Escolha...</option>
+                        <option>Palmeiras</option>
+                        <option>Corinthians</option>
+                        <option>São paulo</option>
+                        <option>Guarani</option>
+                        </select>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>Esportes que possui interesse: </label>
+                        <br>
+                        <input type="checkbox" name="sport" id="1"> Futebol<br>
+                        <input type="checkbox" name="sport" id="2"> Vôlei<br>
+                        <input type="checkbox" name="sport" id="3"> Basquete<br>
+                        <input type="checkbox" name="sport" id="4"> Futsal<br>
+                        <input type="checkbox" name="sport" id="5"> Automobilismo<br>
+                        <input type="checkbox" name="sport" id="6"> Artes Marciais<br>
+                        <input type="checkbox" name="sport" id="7"> Natação<br>
+                    </div>
+                    <hr>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    
+                </form>
+                <button class="btn btn-secondary" onclick="showJson()">Mostrar JSON</button>
+            </div
+        </div>
+    </div>
+    <script src="./_javascript/validateForm.js"></script>
+    <script src="./_javascript/showJson.js"></script>
+</body>
+</html
