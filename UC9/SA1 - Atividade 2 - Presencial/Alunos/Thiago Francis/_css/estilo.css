@@ -1,0 +1,22 @@
+body {
+    padding: 100px;
+    border: 10px;
+    background-color: rgb(243, 243, 243);
+    color: rgb(68, 68, 68);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    width: 900px;
+    
+    
+}
+
+button {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
