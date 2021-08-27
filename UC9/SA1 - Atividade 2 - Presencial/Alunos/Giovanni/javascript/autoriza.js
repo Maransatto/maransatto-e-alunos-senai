@@ -1,6 +1,6 @@
 function botao_sim()
 {
-location.href="form/formulario.html";
+location.href="index.html";
 }
 
 function botao_nao()
