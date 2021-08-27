@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    margin: 1px;
+ 
+}
+.main-head{
+    grid-area: cabecalho;
+    padding: 30px;
+    display:flex;
+     justify-content: space-around;
+     align-items: center;
+    background-color: rgb(75, 121, 37);  
+} 
+
+.main-head img {
+     width: 150px;
+    position:absolute;
+    left:  10px;  
+} 
+.main-head h3{
+    font-size:     50px;
+    text-align:center ;
+    color:white;
+}
+.navegacao {
+   display:flexbox
+
+   ;}
+.navegacao a {
+    font-size: 20px;
+    
+    color:white
+}
+
+.navegacao > ul {
+    background-color: rgb(75, 121, 37);
+}
+.navegacao{
+
+    flex-direction: row;   
+} 
+
+.content p{
+    display: flexbox;
+    font-size: 20px;
+    margin: 80px;
+    text-align: center;
+}
+.content h3{
+  text-align: center;
+}
+
+.separador{
+    margin: 0.5px;
+}
+
+.navegacao{
+    grid-area: header;
+}
+.carrosel h5{
+    font-size: 60px;
+    color: black;
+}
+.carrosel p{
+    font-size: 30px;
+    color: black;
+}
+.carrosel{
+    grid-area: carrosell;
+}
+
+.content{
+    grid-area: Conteudo;
+}
+.content img {
+    display: table-cell;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.rodape{
+    grid-area: rodape;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(75, 121, 37);  
+   grid-area: rodape;
+}
+.imagem_whatsapp{
+    display: flex;
+    justify-content: space-around !important;
+}
+.content_contato h3{
+   text-align: center;
+}
+.content_contato img{
+    height: 35px;
+    width: 35px;
+}
+
+.imagem img{
+    /* width:1005;
+    height: 600px; */
+    width:10px;
+    height: 600px;
+}
+.icones-redes-sociais li img{
+    height: 25px;
+    width: 25px;
+}
+
+/*=============== 
+FORM
+==================*/
+#form {
+    width:100%;
+  
+    background-color: rgb(75, 121, 37);
+    padding: 80px 0;
+    margin:0;
+  
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #form form {
+    width: 90%;
+    max-width: 980px;
+  
+    background: white;
+    
+    padding: 40px;
+    
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.15), 
+      0px 10px 20px -10px rgba(0, 0, 0, 0.1)
+  }
+  
+  #form h3 {
+    margin-bottom: 30px
+  }
+  
+  #form form label {
+    display: none;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .form-group label.right-inline {
+    text-align: right;  
+    padding-right: 8px;
+    padding-left: 10px;
+    width: auto;
+  }
+  
+  .form-group .input-control {
+    flex: 1 1;
+    display: block;
+    margin: -4px 8px 10px;
+    padding: 12px;
+    font-size: 12px;
+  }
+  
+  #form .button {
+    margin: 20px 8px 10px;
+  }
+
+
+.wrapper {
+    /* display: grid;
+    align-items: flex-end; */
+  
+    gap: 4px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+        "cabecalho"
+         "header"
+         "carrosell"
+         "conteudo"
+         "rodape";
+}
+
+
+
+@media (min-width:200px)  and (max-width:400px){
+    .main-head h3{
+        font-size:     12px;
+        text-align:center ;
+        color:white;
+    }
+    .main-head img {
+        width: 45px;
+       position:absolute;
+       left:  10px;  
+   }
+   .navegacao a{
+       font-size: 15px;
+   }
+
+   .rodape p {
+    font-size: 15px;
+   }
+   .wrapper{
+        grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr 1fr;
+        grid-template-columns: 3fr 1fr;
+         grid-template-areas:
+         "cabecalho" "cabecalho"
+         "header" "header"
+         "carrosell" "carrosell"
+         "conteudo" "conteudo" 
+         "rodape" "rodape";
+         
+    }
+}
+
+@media (min-width:401px) and (max-width:900px)  {
+    .main-head h3{
+        font-size:     18px;
+        text-align:center ;
+        color:white;
+    }
+
+    .main-head img {
+        width: 70px;
+       position:absolute;
+       left:  10px;  
+   }
+   .navegacao a{
+    font-size: 12px;
+}
+    .wrapper{
+        grid-template-rows: 1fr 1fr 2fr 2fr 2frr;
+        grid-template-columns: 3fr 1fr;
+         grid-template-areas:
+         "cabecalho" "cabecalho"
+         "header"    "header"
+         "carrosell" "carrosell"
+         "conteudo"  "conteudo"
+         "rodape"    "rodape";
+         
+    }
+}
+
+@media (min-width:901px) and (max-width:1100px) {
+    .main-head h3{
+        font-size:     40px;
+        text-align:center ;
+        color:white;
+    }
+
+    .main-head img {
+        width: 110px;
+       position:absolute;
+       left:  10px;  
+   }
+    .wrapper{
+        grid-template-rows: 1fr 1fr 4fr 4fr 1fr ;   
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-areas:
+        "cabecalho"  "cabecalho"    "cabecalho"
+        "header"     "header"       "header" 
+        "carrosell"  "carrosell"    "carrosell"
+        "conteudo"   "conteudo"     "conteudo"
+        "rodape"     "rodape"       "rodape";
+       }
+}
