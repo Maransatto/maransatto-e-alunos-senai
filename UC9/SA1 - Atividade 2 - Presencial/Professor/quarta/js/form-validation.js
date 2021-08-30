@@ -81,8 +81,7 @@ function getSports() {
             sports.push(sport.value);
         }
     })
-
-    console.log(sports);
+    return sports;
 }
 
 // function showJson() {
