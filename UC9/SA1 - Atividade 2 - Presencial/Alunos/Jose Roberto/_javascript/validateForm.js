@@ -4,10 +4,7 @@ function validateForm() {
 
     var name = document.getElementById('name').value;
     var nickname = document.getElementById('nickname').value;
-    // Vai dar erro na linha abaixo, pois tenta sobrescrever o document, que é o mesmo
-    // usado em document.getElementById(). O erro acontece ainda antes de chegar nesta linha,
-    // só pelo fato dela existir. Por isso deve-se trocar o nome desta variável.
-    var document = document.getElementById('document').value; 
+    var userDocument = document.getElementById('userDocument').value;
     let day = document.getElementById('day').value;
     let month = document.getElementById('month').value;
     let year = document.getElementById('year').value;
@@ -48,7 +45,7 @@ function validateForm() {
         form = false;
     }
 
-    if(cpf.length != 14){
+    if(userDocument.length != 14){
         alert("CPF inválido");
         form = false;
     }

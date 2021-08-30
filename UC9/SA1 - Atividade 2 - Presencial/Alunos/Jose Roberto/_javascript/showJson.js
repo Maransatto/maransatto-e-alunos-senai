@@ -5,7 +5,7 @@ function showJson() {
         "day": document.getElementById('day').value,
         "month": document.getElementById('month').value,
         "year": document.getElementById('year').value,
-        "document": document.getElementById('document').value,
+        "document": document.getElementById('userDocument').value,
         "team_id": document.getElementById('team_id').value,
         "sports": mountSports(),
     }
