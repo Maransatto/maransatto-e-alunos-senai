@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+    background-color: rgb(53, 53, 53);
+}
+
+.container-fluid {
+    color: rgb(247, 247, 247);
+}
+
+#buscas {
+    background-color: rgb(119, 21, 211);
+    color: rgb(214, 214, 214);
+    padding: 10px;
+}
+
+#buscas input {
+    margin: 5px;
+}
+
+#buscas button {
+    margin: 5px;
+}
+
+#headers {
+    background-color: rgb(71, 0, 138);
+    color: rgb(214, 214, 214);
+    padding: 10px;
+}
+
+#headers img {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+#conteudo {
+    background-color: rgb(233, 209, 255);
+}
+
+#conteudo h1 {
+
+    color: black;
+
+}
+
+#conteudo p {
+
+    color: black;
+
+}
+
+#conteudo img {
+    padding: 20px;
+    width: 200px;
+    height: 160px;
+}
+
+#buscas button {
+    width: 100px;
+    height: 40px;
+}
+
+.table img {
+    width: 100px;
+    height: 50px;
+}
