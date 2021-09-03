@@ -1,0 +1,118 @@
+
+.grid-container{
+
+    padding: 5px;
+    background-color:white;
+    gap: 5px;
+    display: grid;
+
+}
+.grid-container div {
+     
+    text-align: center;
+    padding: 1px 0;
+    font-size: 30px;
+    padding: 20px 0;
+}
+.grid-container p{
+    font-size: 20px;
+}
+.grid-container img{
+  height: 200px;
+  width: 300px;
+}
+@media (min-width: 700px) {
+.area_0 { grid-area: logomarca }
+
+.area_1 { grid-area: cabecalho; }
+
+
+.area_2 { 
+  grid-area: busca;
+  #divBusca{
+    background-color:#2F4F4F;
+    border:solid 1px;
+    border-radius:15px;
+    width:300px;
+  }
+  
+  #txtBusca{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:10px;
+    border:none;
+    height:30px;
+    width:260px;
+  } }
+
+.area_3 { grid-area: lateral-e; }
+
+.area_4 { grid-area: conteudo-1; }
+
+.area_5 { grid-area: conteudo-2; }
+
+.area_6 { grid-area: conteudo-3; }
+
+.area_7 { grid-area: conteudo-4; }
+
+.area_8 { grid-area: rodape; }
+.grid-container {
+
+    display: grid;
+  
+    grid-template-areas:
+  
+      'logomarca cabecalho cabecalho cabecalho cabecalho'
+  
+       'busca busca busca busca busca'
+  
+       'lateral-e conteudo-1 conteudo-1 conteudo-2 conteudo-2'
+  
+       'lateral-e conteudo-3 conteudo-3 conteudo-4 conteudo-4'
+  
+      'rodape rodape rodape rodape rodape';
+  
+    grid-gap: 5px;
+  
+    background-color: silver;
+  
+    padding: 5px;
+  
+  }
+  
+   
+  
+  .grid-container div {
+  
+    background-color: white;
+  
+    text-align: center;
+  
+    padding: 20px 0;
+  
+    font-size: 30px;
+  
+  }
+}
+
+.area_0 img{
+  align-items: center;
+  height: 98px;
+  width: 200px;
+}
+
+.area_1 img{
+  height: 100%;
+  width: 100%;
+}
+
+.area_8 p{
+  font-size: 10px;
+}
+.area_3p{
+  text-align:center;
+}
