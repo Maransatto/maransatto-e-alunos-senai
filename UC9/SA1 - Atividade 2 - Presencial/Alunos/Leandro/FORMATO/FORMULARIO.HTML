@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | ESPN</title>
+</head>
+<body>
+    <form class="form-enviar" onsubmit="return validar()">
+
+        <h2>Formulário do Esporte</h2>
+        <br>
+
+        <input type="text" placeholder="Nome de usúario" class="form-campo" id="usuario"> 
+        <div class="form-msg-erro" id="msg-usuario"></div>
+    
+        <br>
+        <input type="text" placeholder="Apelido" class="form-campo" id="apelido"> 
+        <div class="form-msg-erro" id="msg-apelido"></div>
+
+        <br>
+        <div>
+            <label for="nickname" class="form-label">Data de Nascimento</label>
+        </div>
+        <div>
+            <input type="text" class="form-control" name="day" id="day" placeholder="Dia" maxlength="2">
+        </div>
+        <div>
+            <input type="text" class="form-control" name="month" id="month" placeholder="Mês" maxlength="2">
+        </div>
+        <div>
+            <input type="text" class="form-control" name="year" id="year" placeholder="Ano" maxlength="4">
+        </div>
+        
+        <br>
+        <input type="text" placeholder="CPF" class="form-campo" id="cpf"> 
+        <div class="form-msg-erro" id="msg-cpf"></div>
+
+        <br>
+        <div>
+            <label for="team_id" class="form-label">Time do coração</label>
+            <br>
+            <select class="form-select" aria-label="Default select example" name="team_id" id="team_id">
+                <option value="0">Selecione um time</option>
+                <option value="1">São Paulo</option>
+                <option value="2">Santos</option>
+                <option value="3">Corinthians</option>
+                <option value="4">Palmeiras</option>
+            </select>
+        </div>
+
+        <br>
+        <div>
+            <label for="team_id" class="form-label">
+                Esportes de seu interesse:
+            </label>
+            <br> <br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="sport" id="1" value="1">
+                <label class="form-check-label" for="1">Futebol</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="sport" id="2" value="2">
+                <label class="form-check-label" for="2">Vôlei</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="sport" id="3" value="3">
+                <label class="form-check-label" for="3">Basquete</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="sport" id="4" value="4">
+                <label class="form-check-label" for="4">Futsal</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="sport" id="5" value="5">
+                <label class="form-check-label" for="5">Automobilismo</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="sport" id="6" value="6">
+                <label class="form-check-label" for="6">Artes Marciais</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="sport" id="7" value="7">
+                <label class="form-check-label" for="7">Natação</label>
+            </div>
+        </div>
+
+        <br>
+        <input type="submit" value="Enviar" class="form-campo-enviar">
+    </form>
+
+    <script src="../javascript/form.js"></script>
+
+</body>
+</html>
