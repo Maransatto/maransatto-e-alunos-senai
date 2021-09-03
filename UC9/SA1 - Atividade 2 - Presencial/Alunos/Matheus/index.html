@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <title>FORMULARIO</title>
+</head>
+
+<body>
+
+  <!-- CABEÇARIO -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="imagens/logo-nasa.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+          Preencha o Formulario!
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- FORMULARIO -->
+  <form class="row gy-2 gx-3 align-items-center" id="form" method="GET" onsubmit="return validateForm();"
+    action="/result.html">
+    <div class="col-md-6">
+      <label for="inputname4" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="name">
+    </div>
+    <div class="col-md-6">
+      <label for="inputnickname4" class="form-label">Apelido</label>
+      <input type="text" class="form-control" id="nickname">
+    </div>
+    <div class="col-md-4">
+      <label for="inputday" class="form-label">Dia</label>
+      <input type="number" class="form-control" id="day" placeholder="Dia">
+    </div>
+    <div class="col-md-4">
+      <label for="inputmonth2" class="form-label">Mês</label>
+      <input type="number" class="form-control" id="month" placeholder="Mês">
+    </div>
+    <div class="col-md-4">
+      <label for="inputyear2" class="form-label">Ano</label>
+      <input type="number" class="form-control" id="year" placeholder="Ano">
+    </div>
+    <div class="col-md-6">
+      <label for="inputcpf" class="form-label">CPF</label>
+      <input type="number" class="form-control" id="cpf">
+    </div>
+    <div class="col-md-6">
+      <label for="inputState" class="form-label">Time do Coração</label>
+      <select id="team.id" class="form-select">
+        <option selected>Escolha..</option>
+        <option>São Paulo</option>
+        <option>Santos</option>
+        <option>São Caetano</option>
+      </select>
+    </div>
+    <div class="col">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="Futebol" name="sports">
+        <label class="form-check-label" for="gridCheck">
+          Futebol
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="Volei" name="sports">
+        <label class="form-check-label" for="gridCheck">
+          Volei
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="Natação" name="sports">
+        <label class="form-check-label" for="gridCheck">
+          Natação
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="Peteca" name="sports">
+        <label class="form-check-label" for="gridCheck">
+          Peteca
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="Biribol" name="sports">
+        <label class="form-check-label" for="gridCheck">
+          Biribol
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary" onclick="montarJson()">Enviar</button>
+    </div>
+    <div class="col-12" id='resultadoJson'>
+      <div class="col-12" id="resultadosports"></div>
+    </div>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="/js/validateForm.js"></script>
+</body>
+
+</html>
