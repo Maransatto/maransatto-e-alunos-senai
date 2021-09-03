@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 15vh;
+    background-color: blue;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.logo{
+    height: 100px;
+}
+
+.nav-link-item{
+    font-size: 40px;
+    color: snow;
+}
+
+a{
+    color: snow;
+    text-decoration: none;
+}
+table thead {
+    background-color: black;
+    color: white;
+}
+
+button{
+    background-color: green;
+    color: white;
+}
+
+td.Imagens{
+    height: 1%;
+}
