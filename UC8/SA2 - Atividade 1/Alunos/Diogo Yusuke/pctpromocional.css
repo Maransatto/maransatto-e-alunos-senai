@@ -1,0 +1,44 @@
+section{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1200px;
+    height: 50px;
+    background: gray;
+    border: 2px solid;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:1200px;
+    height:100px;
+    background-color: #ffffff;
+    border: 2px solid;
+    
+}
+
+div{
+    
+    align-self: center;
+    
+}
+
+ p{
+    background-color: chartreuse;
+    height: 30px;
+    width:100px;
+    border: 1px solid black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: #ffffff;
+    border-radius: 5%;
+    ;
+}
+
+h1{
+    text-align: center;
+}
