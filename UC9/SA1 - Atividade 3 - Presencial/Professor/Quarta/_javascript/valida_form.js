@@ -20,13 +20,15 @@ function totaliza()
     document.form.total.value = total.toFixed(2);
 }
 
-function validarNome() {
+function validarNome(nome, showAlert = true) {
     try {
-        let value = document.getElementById("nome").value;
+        let value = nome ?? document.getElementById("nome").value;
         let re = /^[a-zA-ZéúíóáÉÚÍÓÁèùìòàçÇÈÙÌÒÀõãñÕÃÑêûîôâÊÛÎÔÂëÿüïöäËYÜÏÖÄ\-\ \s]+$/;
         if (!re.test(value)) {
             // campo inválido, retorna false para o formulário não ser submetido
-            alert('Nome Inválido');
+            if (showAlert) {
+                alert('Nome Inválido');
+            }
             document.form.nome.focus();
             return false;
         }
