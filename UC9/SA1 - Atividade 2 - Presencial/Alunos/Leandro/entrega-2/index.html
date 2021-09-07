@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="PT">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="_css/stili.css">
+
+    <title>Formulário do Esporte</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1> Formulário do Esporte </h1>
+            </div>
+        </div>
+        <hr>
+        <form class="row g-2 gx-3 align-itens-center" id="form" method="GET" onsubmit="return validateform ();"
+            action="/result.html">
+
+            <div class="col-12">
+                <label for="name" class="form-label"> Nome </label>
+                <input type="Text" class="form-control" name="name" id="name" placeholder="Exemplo: José da Silva">
+            </div>
+
+            <div class="col-12">
+                <label for="nickname" class="form-label"> Domínio </label>
+                <input type="Text" class="form-control" name="nickname" id="nickname" placeholder="Exemplo: Silva">
+            </div>
+
+            <!-- dados Nascimento -->
+
+                <div class="col-12">
+                    <label for="Dt_nascimento" class="form-label"> Data de Nascimento </label>
+                </div>
+                <div class="col-auto">
+                    <input type="Text" class="form-control" name="day" id="day" placeholder="dd" maxlength="2">
+                </div>
+                <div class="col-auto">
+                    <input type="Text" class="form-control" name="month" id="month" placeholder="mm" maxlength="2">
+                </div>
+                <div class="col-auto">
+                    <input type="Text" class="form-control" name="year" id="year" placeholder="yyyy" maxlength="4">
+                </div>
+
+
+                <div class="col-12">
+                    <label for="cpf" class="form-label"> CPF </label>
+                    <input type="Text" class="form-control" name="cpf" id="cpf" placeholder="CPF" maxlength="14"
+                        onkeyup="mascara_cpf ()">
+                </div>
+
+                
+                <!-- tempo combobox -->
+                    <div class="col-12">
+                        <label for="team_id" class="form-label"> Time do coração
+                            <select name="combo" id="team_id" class="form-select">
+                                <opção selecionada> Escolha um time </option>
+                                    <option> São Paulo </option>
+                                    <option> Palmeiras</option>
+                                    <option> Botafogo </option>
+                                    <option> Santos </option>
+
+                            </select>
+                    </div>
+
+                    <!-- checkbox outros esportes -->
+                        <div class="col-12">
+                            <label for="team_id" class="form-label">
+                                Embora o conteúdo seja sobre esporte, não se sabe por que pede time de futebol acima,
+                                mas abaixo
+                                você tem a opção de informar os esportes de seu interesse
+                            </label>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <!-- <input class="form-check-input" type="checkbox" name="Sport" id="1"
+                                    value="Futebol"> -->
+                                    <input type="checkbox" name="Sport" id="Sport" value="Futebol"> Futebol
+                                    <!-- <label class="form-check-label" for="7"> Futebol </label> -->
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <!-- <input class="form-check-input" type="checkbox" name="Sport" id="2" value="Volei">
+                                    -->
+                                    <input type="checkbox" name="Sport" id="Sport" value="Volei"> Volei
+                                    <!-- <label class="form-check-label" for="7"> Volei </label> -->
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <!-- <input class="form-check-input" type="checkbox" name="Sport" id="3"
+                                    value="Basquete"> -->
+                                    <input type="checkbox" name="Sport" id="Sport" value="Basquete"> Basquete
+                                    <!-- <label class="form-check-label" for="7"> Basquete </label> -->
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <!-- <input class="form-check-input" type="checkbox" name="Sport" id="4" value="futsal">
+                                    -->
+                                    <input type="checkbox" name="Sport" id="Sport" value="futsal"> futsal
+                                    <!-- <label class="form-check-label" for="7"> futsal </label> -->
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" name="Sport" id="Sport" value="Golf"> Golfe
+                                <!-- <label class="form-check-label" for="7"> Golfe </label> -->
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-success" type="submit"> Enviar </button>
+                            <button class="btn btn-primary mx-3" type="button" onclick="montarjson();">Mostrar JSON</button>
+                        </div>
+                        <!-- <div class="col-12" id='resultjson'>
+    </div> -->
+    </form>
+
+
+    </div>
+
+
+
+
+</body>
+<!-- Pacote JavaScript com Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integridade="sha384-U1DAWAznBHeqEIlVSCgzq + c9gqGAJn5c / t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"> </script>
+    <script src="_javascript/Script.js"> </script>
+
+</html>
