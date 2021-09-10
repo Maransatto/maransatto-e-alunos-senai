@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box; /* o * é um estilo que será aplicado para todo os elementos do site e isso afeta */
+}
+body {
+    font-family:'Comfortaa', cursive;
+    margin: 0; /* é recomendedado tirar a margem do body para que se tenha mais flexibilidade para trabalhar*/
+}
+.wrapper > * {                     /*wrapper: elemento pai. O sinal > * quer dizer os estilos estão sendo aplicados nos elementos filhos*/
+    background-color: rgba(211, 211, 211, 0.4);
+    /*border: 1px solid red;*/
+    border-radius: 5px;
+   
+}
+.main-head{
+    grid-area: header;
+    
+}
+.side{
+    grid-area: sidebar;
+}
+.content{
+    grid-area: content;
+}
+.video-1{
+    grid-area: first-video;
+}
+.video-2{
+    grid-area: sec-video;
+}
+.video-3{
+    grid-area: th-video;
+}
+.video-4{
+    grid-area: fourth-video;
+}
+.navigation{
+    list-style: none; /*tira os pontinhos dos itens*/
+    display: flex;
+    flex-direction: column; /*qdo estiver no cel, os itens ficará em coluna*/
+    padding: 10px;
+}
+
+.navigation a{
+    color: #545454;
+    text-decoration: none; /*tira o sublinhado*/
+    padding: 20px;
+    
+}
+.navigation a:hover{
+    text-decoration: none;
+    color: #D43A2F;
+    padding: 0px 30px; /*vertical horizontal*/
+}
+.content h1{
+    text-align: left;
+    padding: 20px;
+    color: #D43A2F;
+}
+.content p{
+    text-align: justify;
+    padding: 20px;
+    color: #545454;
+}
+.video{
+    display: flex;
+    width: auto;
+    margin: 0 auto;
+
+}
+.main-head{
+    text-align: left;
+    padding: 20px;
+    color: #D43A2F;
+    display: flex;
+}
+
+.main-head img{
+    width: 50px;
+    height: 50px;
+}
+.wrapper{ /*padrão para tela de celular*/
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    background-color:#E5E5E5;
+    display: grid;
+    gap: 5px; /*espaço entre as áreas*/
+    grid-template-areas:  /*definindo as areas, o posicionamento dos itens dentro do grid*/
+        "header"
+        "sidebar"
+        "content"
+        "first-video"
+        "sec-video"
+        "th-video"
+        "fourth-video"
+}
+@media(min-width: 500px) { /*aqui que entra a responsividade, qdo a tela for pelo menos 500 px, muda-se a estrutura*/
+    .wrapper{
+        grid-template-columns: 4fr 1fr;
+        grid-template-areas: 
+        "header  header"
+        "sidebar sidebar"
+        "content first-video"
+        "content sec-video"
+        "content th-video"
+        "content fourth-video"
+    }
+    .navigation{
+        flex-direction: row; /*qdo estiver em tela, os itens ficará em linha*/
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        padding: 0px 30px; /*vertical horizontal*/
+    }
+}
+@media(min-width: 1000px) { /*aqui que entra a responsividade, qdo a tela for pelo menos 1000 px, muda-se a estrutura*/
+    .wrapper{
+        grid-template-rows: 1fr 3fr 3fr;
+        grid-template-columns: 1fr 4fr 2fr 2fr;
+        grid-template-areas: 
+        "header    header    header       header"
+        "sidebar   content   first-video  sec-video"
+        "sidebar   content   th-video     fourth-video"
+    }
+    .navigation{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin: 10px 10px 10px 10px;
+        padding: 0px 30px; /*vertical horizontal*/
+        display: inline-block;
+    }
+}
+
+
