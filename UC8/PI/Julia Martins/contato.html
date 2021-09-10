@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html"><img class="logo" src="/img/Reformado_-_Price_List-removebg-preview.png" alt="logo"></a>
+            <ul class="nav-links">
+                <a href="/Produto.html"><li class="nav-links-itens">Produto</a></li>
+                <a href="/contato.html"><li class="nav-links-itens">Contato</a></li>
+                <a href="/sobre.html"><li class="nav-links-itens">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <form action="/formulario-contato" method="post">
+        <h1>CONTATO</h1>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="texto" id="nome" name="nome_usuario">
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email_usuario">
+        </div>
+        <div>
+            <label for="texto">Texto:</label>
+            <textarea id="texto" name="texto_usuario"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Enviar</button>
+          </div>
+    </form>
+
+    <footer>
+        <div class="endereco">
+            <h5>Endereço</h5>
+            <p>Rua Sampaio Vidal, 1000</p>
+            <p>Centro, Marilia-SP</p>
+
+        </div>
+        <div class="rede-social">
+            <h5>Redes Sociais</h5>
+            <div class="icons-rede-social">
+                <img src="./img/facebook.svg" alt="face">
+                <img src="./img/twitter.svg" alt="twitter">
+                <img src="./img/youtube.svg" alt="youtube">
+                <img src="./img/instagram.svg" alt="insta">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
