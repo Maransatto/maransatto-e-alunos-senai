@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana;
+    font-size: 17px;
+   
+}
+.wrapper > * {
+    background-color: darksalmon;       
+    border: 1px solid black;
+    border-radius: 5px;
+   }
+
+.main-head {
+    grid-area: header;
+}
+ .side {
+    grid-area: sidebar;
+}
+.content{
+    grid-area: content;
+}
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-1 {
+    grid-area: first-video;
+}
+.video-2 {
+    grid-area: sec-video;
+}
+.video-3 {
+    grid-area: th-video;
+}
+.video-4 {
+    grid-area: fourth-video;
+} 
+.navigation{
+    list-style: none;
+    display: flex;
+    padding: 9px;
+}
+.navigation a{
+    color: #0c0c0c;
+    text-decoration: none;
+    padding: 5px;
+}
+.navigation a:hover{
+    text-decoration: none;
+    color: #e4bc38;
+    padding: 0px 25px;
+}
+.content h1{
+    text-align: left;
+    padding: 20px;
+    color: black;
+}
+
+.content h3{
+    text-align: justify;
+    padding: 20px;
+    
+}
+.content p{
+    text-align: justify;
+    padding: 20px;
+    color: black;
+}
+.video{
+    display: flex;
+    width: auto;
+    margin: 0 auto;
+
+}
+.main-head{
+    text-align: center;
+    padding: 1px;
+    color: #0c0c0c;
+    display: flex;
+}
+
+.main-head img{
+    width: 200px;
+    height: 150px;
+    padding: 5px;
+}
+
+.wrapper {
+    display: grid;
+    gap: 7px;  
+    
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;    
+      
+    grid-template-areas: 
+        "header"
+        "sidebar"
+        "content"
+        "first-video"
+        "sec-video"
+        "th-video"
+        "fourth-video";
+}
+
+@media (min-width: 500px) {
+    .wrapper {
+        grid-template-columns: 3fr 3fr;       
+        grid-template-rows: 2fr 1fr 3fr 3fr 3fr 3fr;
+        grid-template-areas:
+            "header header"
+            "sidebar sidebar"
+            "content first-video"
+            "content sec-video"
+            "content th-video"
+            "content fourth-video";
+    }
+
+.navigation{
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0px 0px;
+    }
+}
+@media(min-width: 1000px) {
+.wrapper{
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 3fr 2fr 2fr;
+    grid-template-areas: 
+    "header    header   header header"
+    "sidebar   content   sec-video  th-video"
+    "sidebar   content   sec-video  th-video"
+    "sidebar   content   first-video   fourth-video"
+    "sidebar   content   first-video   fourth-video"
+    }
+.navigation{
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 10px 10px 10px 10px;
+    padding: 0px 30px; 
+    display: inline-block;
+    }
+}
