@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formulário</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Preencha o formulário</h1>
+      </div>
+    </div>
+
+  </div>
+  <hr>
+
+
+  <form class="row gy-2 gx-3 align-items-center" id="form" method="GET" onsubmit="return validateForms();">
+
+    <div class="col-12">
+      <label for="name" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="name" placeholder="Exemplo: João Batista da Silva" >
+    </div> <br>
+    <div class="col-12">
+      <label for="nickname" class="form-label">Apelido</label>
+      <input type="text" class="form-control" id="nickname" placeholder="Exemplo: Bolachão" >
+    </div> <br>
+
+    <div class="col-12">
+      <label for="datanasc" class="form-label">Data de nascimento</label>
+    </div>
+    <div class="col-auto">
+      <input type="text" class="form-control" name="day" id="day" placeholder="dd" >
+    </div>
+    <div class="col-auto">
+      <input type="text" class="form-control" name="month" id="month" placeholder="mm" >
+    </div>
+    <div class="col-auto">
+      <input type="text" class="form-control" name="year" id="year" placeholder="yyyy" >
+    </div> <br>
+
+    <div class="col-12">
+      <label for="cpf" class="form-label">CPF</label>
+      <input type="text" class="form-control" name ="cpf" id="cpf" maxlength="14">lo
+    </div> <br>
+
+    <div class="mb-3">
+      <label for="team_id" class="form-label">Time de coração</label>
+      <select class="form-select" aria-label="Default select example" name="team_id" id="team_id">
+        <option value="0">Selecione um time</option>
+        <option value="1">São Paulo</option>
+        <option value="2">Corinthians</option>
+        <option value="3">Palmeiras</option>
+      </select>
+    </div> <br>
+
+    <div class="col-12">
+      <label for="esporte" class="form-label">
+        Embora o conteudo seja sobre esporte, não se sabe por que pede time de futebol acima, mas abaixo marque as
+        opções
+      </label>
+    </div>
+    <br>
+    <div class="form-check form-check-inline">
+      <input class="form-check form-check-inline" type="checkbox" name="sport" id="1" value="1">
+      <label class="form-check form-check-inline" for="1">Futebol</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check form-check-inline" type="checkbox" name="sport" id="2" value="2">
+      <label class="form-check form-check-inline" for="2">Basquete</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check form-check-inline" type="checkbox" name="sport" id="3" value="3">
+      <label class="form-check form-check-inline" for="3">Volei</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check form-check-inline" type="checkbox" name="sport" id="4" value="4">
+      <label class="form-check form-check-inline" for="4">Futsal</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check form-check-inline" type="checkbox" name="sport" id="5" value="5">
+      <label class="form-check form-check-inline" for="5">Gateball</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check form-check-inline" type="checkbox" name="sport" id="6" value="6">
+      <label class="form-check form-check-inline" for="6">Judo</label>
+    </div>
+
+    <button type="submit">Enviar </button>
+    
+
+  </form> 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana;
+}
+.wrapper > * {
+  background-color: rgb(245, 233, 63);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.img {
+  flex: auto;
+  justify-content: center;
+  width: 100%;
+}
+.banner {
+  grid-area: banner;
+}
+.content {
+  grid-area: content;
+}
+.seccion1 {
+  grid-area: seccion1;
+}
+.section2 {
+  grid-area: section2;
+}
+.seccion3 {
+  grid-area: seccion3;
+}
+.seccion4 {
+  grid-area: seccion4;
+}
+.section5 {
+  grid-area: seccion5;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  padding: 9px;
+}
+.navigation a {
+  color: #0c0c0c;
+  text-decoration: none;
+}
+.navigation a:hover {
+  text-decoration: none;
+  color: #e4bc38;
+}
+
+h1 {
+  text-align: center;
+  padding: 05px;
+  color: black;
+  font-size: 10vw;
+}
+
+h2 {
+  font-size: 5vw;
+}
+.h3 {
+  text-align: justify;
+  font-size: small;
+  padding: 05px;
+}
+.wrapper {
+  display: grid;
+  gap: 7px;
+
+  width: 100vw;
+  padding: 10px;
+
+  grid-template-areas:
+    "banner"
+    "seccion1"
+    "content"
+    "section2"
+    "seccion3"
+    "seccion4"
+    "seccion5";
+}
+
+@media (min-width: 720px) {
+  .wrapper {
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 2fr 3fr 3fr;
+    grid-template-areas:
+      "banner     banner"
+      "seccion1   content"
+      "seccion1   content"
+      "section2   seccion3"
+      "section2   seccion3"
+      "seccion4   seccion5"
+      "seccion4   seccion5";
+  }
+
+  .navigation {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas:
+      "banner     banner   banner"
+      "banner     banner   banner"
+      "content    seccion1   seccion5"
+      "content    seccion1   seccion5"
+      "section2   seccion3   seccion4"
+      "section2   seccion3   seccion4";
+  }
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 10px 10px 10px 10px;
+    padding: 0px 15px;
+    display: inline-block;
+  }
+}
+
+.nav {
+  background-color: aquamarine;
+  border-bottom: 3px solid cornflowerblue;
+  text-decoration: none;
+}

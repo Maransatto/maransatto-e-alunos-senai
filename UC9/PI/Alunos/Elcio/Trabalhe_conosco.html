@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="Pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe conosco</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="_css/main.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="main-head">
+            <img src="_imagens/Logo.png" alt="Logo">
+            <h3>e-ServAgro servindo ao Agricultor</h3>
+        </header>
+        <hr class="separador">
+
+        <aside class="navegacao">
+            <nav class="navbar navbar-expand-md navbar-dark menu ">
+                <!-- <div class="container-fluid"> -->
+                <div class="container">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Quem_Somos.html">Quem somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Parceiro.html">Parceiros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contatos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Trabalhe_conosco.html">Trabalhe Conosco</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Área Técnica</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Área Cliente</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+
+
+        <hr>
+
+        <article class="content ">
+
+            <div class="row mt-2">
+                <div class="col-12">
+                    <h3>Faça parte do nosso time de Técnicos</h3>
+                    <h5>
+                        Envie suas informações no formulário abaixo e venha fazer parte do nosso time.
+                    </h5>
+                </div>
+            </div>
+            <hr>
+
+            <section id="formulario">
+                <form  onsubmit="return valida_Form()">
+                    
+                    <!-- <form> -->
+                    <h3>Faça aqui seu cadastro como Técnico e seja bem vindo ao nosso time.</h3>
+
+                    <div class="form-group">
+                        <!-- <input class="input-control" id="nome" maxlength="80" minlength="15" placeholder="nome"/> -->
+                        <input class="input-control" id="nome" maxlength="80" placeholder="Nome" />
+                        <label id="nome_obrigatorio" hidden class="validation_field">Nome Obrigatório</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="input-control" id="email" placeholder="email" />
+                    </div>
+
+                    <div class="form-group">
+                        <input class="input-control" id="empresa" maxlength="80" placeholder="Empresa" />
+                    </div>
+                    <div class="form-group">
+                        <input class="input-control cpfOuCnpj" id="cpf_cnpj" placeholder="CPF/CNPJ" />
+                    </div>
+                    <div class="form-group">
+                        <input class="input-control" id="telefone" placeholder="Telefone" style="flex:  3 1" />
+                        <input class="input-control" id="cep" maxlength="8" minlength="8" onblur="pesquisaCep();"
+                            placeholder="CEP" style="flex: 3 1" />
+                    </div>
+                    <div class="form-group">
+                        <input class="input-control" id="rua" placeholder="Rua, avenida" />
+                    </div>
+
+                    <div class="form-group">
+                        <input class="input-control" id="numero" placeholder="Número" style="flex: 1" />
+                        <input class="input-control" id="complemento"  maxlength="80" placeholder="Complemento" style="flex: 1" />
+                    </div>
+                    <div class="form-group">
+                        <input class="input-control" id="bairro" placeholder="Bairro" />
+                    </div>
+
+
+                    <div class="form-group">
+                        <input class="input-control" id="cidade" placeholder="Cidade" style="flex: 3 1" />
+                        <input class="input-control" id="estado" placeholder="Estado" style="flex: 1" />
+                    </div>
+
+                    <div class="form-group">
+                        <input class="input-control" id="especialidade"  maxlength="80" placeholder="Especialidade" />
+                    </div>
+                    <div class="form-group">
+                        <!-- <button type="submit" class="button">Cadastrar</button> -->
+                        <button type="submit" class="btn btn-success botao_cadastro">Cadastrar</button>
+                        <!-- <button class="btn btn-success" onclick="validarTudo()">Cadastrar</button> -->
+
+                    </div>
+
+                </form>
+            </section>
+
+
+            <!-- <button class="botao">Ofertas</button> -->
+        </article>
+        <hr>
+        <footer class="rodape">
+            <h5 class="white-text">Siga nossas redes sociais</h5>
+            <ul class="nav justify-content-center icones-redes-sociais">
+                <li>
+                    <a href="https://facebook.com.br" target="blank">
+                        <img src="_imagens/facebook.jpg" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="blank">
+                        <img src="_imagens/Twitter.jpg" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com.br" target="blank">
+                        <img src="_imagens/instagran.jpg" alt="LinkedIn">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://br.linkedin.com/" target="blank">
+                        <img src="_imagens/linkedin.jpg" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+            <p>Todos direitos reservados e-ServAgro ®</p>
+        </footer>
+
+    </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+
+
+<script src="_Javascript/Formulario.js"></script>
+
+<script type="text/javascript">
+ $(document).ready(function () {
+    $("#cep").mask("99.999-999");
+    $("#telefone").mask('(99) 99999-9999'); //Celular
+
+    var options = {
+        onKeyPress: function (cpf, ev, el, op) {
+            var masks = ['000.000.000-000', '00.000.000/0000-00'];
+            $('.cpfOuCnpj').mask((cpf.length > 14) ? masks[1] : masks[0], op);
+        }
+    }
+    $('.cpfOuCnpj').length > 11 ? $('.cpfOuCnpj').mask('00.000.000/0000-00', options) : $('.cpfOuCnpj').mask('000.000.000-00#', options);
+
+});
+  
+</script>
+
+
+<!-- <script>
+    $(function () {
+        $("#acordeon").accordion({
+            active: false,
+            collapsible: true
+        });
+        $(function () {
+            $('.mask-numeros').mask('9999999999'); //caracteres numéricos
+            $('.mask-cpf').mask('999.999.999-99'); //CPF
+            $('.mask-cep').mask('00000-000');
+            $('.mask-celular').mask('(99) 99999-9999'); //Celular
+            $('.mask-real').maskMoney({
+                showSymbol: true, symbol: 'R$ ',
+                decimal: ',', thousands: '.', allowZero: true
+            }); // valores monetários
+        });
+
+    });
+</script> -->
+
+</html>

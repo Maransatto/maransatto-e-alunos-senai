@@ -1,0 +1,28 @@
+body {
+    background-color: #8ab4f8;
+}
+
+.container > * {
+    border: 1px solid green;
+}
+
+.header { grid-area: header; }
+.side-menu { grid-area: side; }
+.content { grid-area: main-content; }
+.video-1 { grid-area: video-1; }
+.video-2 { grid-area: video-2; }
+.video-3 { grid-area: video-3; }
+.video-4 { grid-area: video-4; }
+
+.container {
+    gap: 20px;
+    width: 996px;
+    height: 616px;
+    background-color: #ccc;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: 
+        "header         header          header          header"
+        "side           main-content    video-1         video-2"
+        "side           main-content    video-3         video-4"
+}

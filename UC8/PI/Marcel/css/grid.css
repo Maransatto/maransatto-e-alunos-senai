@@ -1,0 +1,96 @@
+        .posicao-formulario {
+            margin-top: 100px !important;
+            margin-left: 220px;
+        }
+        
+        .posicao-Esquerda {
+            background-color: gray !important;
+        }
+        
+        h1 {
+            margin-left: 3%;
+        }
+        
+        .botao {
+            background-color: blue;
+            margin-top: 10%;
+            height: 48px;
+            width: 391px;
+            border-radius: 35px;
+            color: white;
+            transform: translate(-13%);
+        }
+        
+        #container {
+            position: fixed;
+            background-color: blue;
+            width: 300vh;
+            height: 300vh;
+        }
+        
+        .elemento {
+            background: white;
+            width: 397px;
+            height: 490px;
+            margin-left: 24%;
+            margin-top: 4%;
+        }
+        
+        h5 {
+            margin-left: 32%;
+            padding-top: 15%;
+            font-family: font-family'Lato', sans-serif;
+        }
+        
+        .posicao-Form {
+            padding-left: 10%;
+        }
+        
+        .posicaoForm {
+            padding-left: 10%;
+        }
+        
+        .botaoContinuar {
+            margin-left: 10%;
+            margin-top: 7%;
+            width: 320px;
+            height: 67px;
+        }
+        
+        .telaInicio {
+            text-decoration: none;
+            padding-left: 30%;
+            padding-top: 10%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        img {
+            width: 260px;
+            height: 185px;
+        }
+        
+        h3 {
+            font-size: 15px;
+            padding-left: 36%;
+            color: white;
+        }
+        
+        .background {
+            background-image: url(../imagens/gráfico.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 0;
+            position: relative;
+        }
+        
+        h5 {
+            font-size: 30px;
+            transform: translate(-28%, -47%);
+        }
+        
+        h4 {
+            font-size: 30px;
+            transform: translate(12%, -90%);
+        }

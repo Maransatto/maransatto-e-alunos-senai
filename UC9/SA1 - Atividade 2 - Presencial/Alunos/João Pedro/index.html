@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1 class="titulo">FORMULÁRIO</h1>
+    Nome:
+    <input type="text" id="name">
+    <br>
+
+    Apelido:
+    <input type="text" id="nickname">
+    <br>
+
+    Data de Nascimento:
+    <input type="text" size="1" id="day" maxlength="2">
+    /
+    <input type="text" size="1" id="month" maxlength="2">
+    /
+    <input type="text" size="2" id="year" maxlength="4">
+    <br>
+
+    CPF:
+    <input type="text" oninput="maskCpf(this)" id="cpf" maxlength="14">
+    <br>
+
+    Time do coração:
+    <select id="team_id">
+        <option id="0">Selecione um Time</option>
+        <option id="1">Corinthians</option>
+        <option id="2">São Paulo</option>
+        <option id="3">Palmeiras</option>
+        <option id="4">Vasco</option>
+        <option id="5">Santos</option>
+        <option id="6">Flamengo</option>
+    </select>
+    <br>
+
+    Esportes de interesse:
+    <br>
+    <input type="checkbox" name="sport" id="sport1" />Futebol <br />
+    <input type="checkbox" name="sport" id="sport2" />Volei <br />
+    <input type="checkbox" name="sport" id="sport3" />Basquete <br />
+    <input type="checkbox" name="sport" id="sport4" />Handbol <br />
+    <input type="checkbox" name="sport" id="sport5" />Judo <br />
+    <input type="checkbox" name="sport" id="sport6" />Natação <br />
+
+    <button onclick="ValidarTudo()">CONFIMAR</button>
+    <button onclick="GerarJson()">JSON</button>
+
+    <script src="./js/validar.js"></script>
+</body>
+</html>

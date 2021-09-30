@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 260px;
+    height: 185px;
+}
+
+body {
+    height: 100%;
+    margin: 0%;
+}
+
+.background {
+    background-image: url(../imagens/background.PNG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    margin-left: 5%;
+}
+
+h2 {
+    color: white;
+    margin-left: 5%;
+}
+
+.container {
+    position: relative;
+    color: white;
+}
+
+h3 {
+    color: black;
+    margin: 5%;
+}
+
+.elemento {
+    background-color: white;
+    height: 304px;
+    width: 330px;
+    margin-left: 880px;
+    transform: translate(-0%, -145%);
+    padding: 0px;
+    border-radius: 35px;
+}
+
+.botao1 {
+    margin-left: 7%;
+    height: 50px;
+    width: 284px;
+    background-color: blue;
+    color: white;
+    border-radius: 35px;
+    font-size: 28px;
+    padding-left: 4%;
+}
+
+h5 {
+    font-size: 25px;
+    margin-left: 13%;
+}
+
+#Main-Banner {
+    background: url(../imagens/Aplicativo_de_banco.PNG.png);
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 100%;
+}
+
+.botao {
+    transform: translate(10%);
+    background-color: blue;
+    border-radius: 15%;
+}
+
+#container3 {
+    background-color: black;
+    height: 390px;
+    transform: translate(-12%);
+    width: 1400px;
+    background-position: center;
+    position: relative;
+    padding-right: 40%;
+    padding-top: 5%;
+}

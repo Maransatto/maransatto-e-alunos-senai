@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | SoundSoft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+  <div class="container">
+    <div class="row mt-5">
+        <div class="col-12">
+          <div class="text-center">
+            <h1>Cadastro de Usuário</h1>
+          </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-12">
+            <form onsubmit="return enviarFormulario()">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="name" placeholder="Digite seu Nome, ex: Giovanni Giuseppe">
+                  <label id="nome_invalido" hidden class="validation_field">Nome inválido</label>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="text" class="form-control" id="email" placeholder="Digite seu E-mail, ex: soundsoft@email.com">
+                  <label id="email_invalido" hidden class="validation_field">E-mail inválido</label>
+                </div>
+                <div class="mb-3">
+                  <label for="cpf" class="form-label">CPF</label>
+                  <input type="text" class="form-control mask-cpf" id="cpf" placeholder="Digite seu CPF, ex: 465.881.258-44">
+                  <label id="cpf_invalido" hidden class="validation_field">CPF inválido</label>
+                </div>
+                <div class="mb=3">
+                <label for="nascimento" class="form-label">Data Nascimento</label>
+                <input class="form-control mask-date mask-numeros" type="text" name="nascimento" id="nascimento" placeholder="Digite sua Data de Nascimento, ex: 21/01/2004">
+                <label id="nascimento_invalido" hidden class="validation_field">Data de Nascimento inválido</label>
+                </div>
+                <div class="mb-3">
+                  <label for="celular" class="form-label">Celular</label>
+                  <input type="text" class="form-control mask-cel" id="celular" placeholder="Digite seu Número de Celular, ex: (14) 99102-0143">
+                  <label id="celular_invalido" hidden class="validation_field">Celular inválido</label>
+                </div>
+                <div class="mb-3">
+                  <label for="cep" class="form-label">CEP</label>
+                  <input id="cep" type="text" class="form-control mask-cep" placeholder="Digite seu CEP, ex: 01153-000">
+                  <label id="cep_invalido" hidden class="validation_field">CEP inválido</label>
+                </div>
+                <div class="mb-3">
+                  <label for="logradouro" class="form-label">Logradouro</label>
+                  <input id="logradouro" type="text" class="form-control" placeholder="Digite seu Logradouro, ex: Rua dos Pinheiros">
+                </div>
+                <div class="mb-3">
+                  <label for="numero" class="form-label">Número</label>
+                  <input id="numero" type="text" class="form-control" placeholder="Digite o Número de sua residência, ex: 1574">
+                  <label id="numero_invalido" hidden class="validation_field">Número inválido</label>
+                <div class="mb-3">
+                  <label for="complemento" class="form-label">Complemento</label>
+                  <input id="complemento" type="text" class="form-control" placeholder="Digite o lugar onde você mora, ex: Casa, Apartamento, Etc..."> 
+                </div>
+                <div class="mb-3">
+                  <label for="bairro" class="form-label">Bairro</label>
+                  <input id="bairro" type="text" class="form-control" placeholder="Digite seu Bairro, ex: Barra Funda">
+                </div>
+                <div class="mb-3">
+                  <label for="cidade" class="form-label">Cidade</label>
+                  <input id="cidade" type="text" class="form-control" placeholder="Digite sua Cidade onde você mora, ex: São Paulo">
+                </div>
+                <div class="mb-3">
+                  <label for="uf" class="form-label">Estado</label>
+                  <input id="uf" type="text" class="form-control" placeholder="Digite o Estado onde você mora, ex: SP">
+                </div>
+
+                <div class="text-center">
+                <button type="submit" class="btn btn-outline-primary btn-lg" style="border-radius:30px" disabled="disabled">Enviar</button>
+                </div>
+              </form>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+    <script src="javascript.js/register.js"></script>
+
+    <!-- <script src="'https://viacep.com.br/ws/17580000/json/?callback=meu_callback'"></script> -->
+
+    <script>
+      $(function() {
+    
+        // não sei pra que é, ver depois
+        $( "#acordeon" ).accordion({
+            active: false, 
+            collapsible: true
+        });
+    
+        $('.mask-numeros').mask('9999999999'); //caracteres numéricos
+        $('.mask-cpf').mask('999.999.999-99'); //CPF
+        $('.mask-date').mask('99/99/9999'); //DATA
+        $('.mask-cel').mask('(99) 99999-9999'); //CELULAR
+        $('.mask-cep').mask('99999-999'); //CEP
+        $('.mask-real').maskMoney({
+          showSymbol: true,
+          symbol: 'R$ ',
+          decimal: ',',
+          thousands: '.',
+          allowZero: true
+        }); // valores monetários
+    
+    
+      });
+    
+    
+    </script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="btn-lg nav-link" href="">Minhas Músicas</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quemsomos.html">Quem Somos?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gêneros Musicais</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faleconosco.html">Fale Conosco</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Busque aqui" aria-label="Search">
+        <button class="btn btn-outline-primary btn-lg" style="border-radius:30px" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+</body>
+</html>

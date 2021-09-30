@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 50%;
+    margin: 30%;
+    margin-bottom: 20%;
+    margin-top: 20%;
+}
+h1{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    background-color: gray;
+    border-radius: 6px;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.button{
+    background-color: gray;
+    border-radius: 6px;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+
+}

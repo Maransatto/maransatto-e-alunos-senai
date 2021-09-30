@@ -1,0 +1,132 @@
+.top-list {
+    list-style-type: none;
+    list-style: none;
+}
+
+.top-list > li > a{
+    color: black;
+    text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #ccc;
+  }
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+.bd-placeholder-img-lg {
+  font-size: 3.5rem;
+}
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+h1.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.container-text p {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+.card {
+  border:none;
+  padding: 10px 50px;
+}
+
+.card::after {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover {
+  transform: scale(1.02, 1.02);
+  -webkit-transform: scale(1.02, 1.02);
+  backface-visibility: hidden; 
+  will-change: transform;
+  box-shadow: 0 1rem 3rem !important;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.card:hover .btn-outline-primary{
+  color:white;
+  background:#007bff;
+}
+
+.form-logo {
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+}
+
+.rodape {
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white !important;
+}
+
+.validation_field {
+  color: red;
+  font-size: small;
+}
